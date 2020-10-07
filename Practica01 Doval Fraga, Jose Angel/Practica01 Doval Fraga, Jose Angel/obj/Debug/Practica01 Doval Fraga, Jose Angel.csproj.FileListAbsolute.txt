@@ -1,0 +1,20 @@
+E:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\bin\Debug\Practica01 Doval Fraga, Jose Angel.exe.config
+E:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\bin\Debug\Practica01 Doval Fraga, Jose Angel.exe
+E:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\bin\Debug\Practica01 Doval Fraga, Jose Angel.pdb
+E:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\obj\Debug\Practica01 Doval Fraga, Jose Angel.csprojAssemblyReference.cache
+E:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\obj\Debug\Practica01_Doval_Fraga__Jose_Angel.Form1.resources
+E:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\obj\Debug\Practica01_Doval_Fraga__Jose_Angel.Properties.Resources.resources
+E:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\obj\Debug\Practica01 Doval Fraga, Jose Angel.csproj.GenerateResource.cache
+E:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\obj\Debug\Practica01 Doval Fraga, Jose Angel.csproj.CoreCompileInputs.cache
+E:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\obj\Debug\Practica01 Doval Fraga, Jose Angel.exe
+E:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\obj\Debug\Practica01 Doval Fraga, Jose Angel.pdb
+F:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\bin\Debug\Practica01 Doval Fraga, Jose Angel.exe.config
+F:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\bin\Debug\Practica01 Doval Fraga, Jose Angel.exe
+F:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\bin\Debug\Practica01 Doval Fraga, Jose Angel.pdb
+F:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\obj\Debug\Practica01 Doval Fraga, Jose Angel.csprojAssemblyReference.cache
+F:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\obj\Debug\Practica01_Doval_Fraga__Jose_Angel.Form1.resources
+F:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\obj\Debug\Practica01_Doval_Fraga__Jose_Angel.Properties.Resources.resources
+F:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\obj\Debug\Practica01 Doval Fraga, Jose Angel.csproj.GenerateResource.cache
+F:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\obj\Debug\Practica01 Doval Fraga, Jose Angel.csproj.CoreCompileInputs.cache
+F:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\obj\Debug\Practica01 Doval Fraga, Jose Angel.exe
+F:\Segundo Curso\Interfaces\Practica01 Doval Fraga, Jose Angel\Practica01 Doval Fraga, Jose Angel\obj\Debug\Practica01 Doval Fraga, Jose Angel.pdb
