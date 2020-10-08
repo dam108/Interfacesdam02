@@ -1,0 +1,10 @@
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra 02 Jose Angel Doval Fraga1\Practica01 Extra 02 Jose Angel Doval Fraga1\bin\Debug\Practica01 Extra Jose Angel Doval Fraga.exe.config
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra 02 Jose Angel Doval Fraga1\Practica01 Extra 02 Jose Angel Doval Fraga1\bin\Debug\Practica01 Extra Jose Angel Doval Fraga.exe
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra 02 Jose Angel Doval Fraga1\Practica01 Extra 02 Jose Angel Doval Fraga1\bin\Debug\Practica01 Extra Jose Angel Doval Fraga.pdb
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra 02 Jose Angel Doval Fraga1\Practica01 Extra 02 Jose Angel Doval Fraga1\obj\Debug\Practica01 Extra 02 Jose Angel Doval Fraga1.csprojAssemblyReference.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra 02 Jose Angel Doval Fraga1\Practica01 Extra 02 Jose Angel Doval Fraga1\obj\Debug\Practica01_Extra_02_Jose_Angel_Doval_Fraga1.Practica01.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra 02 Jose Angel Doval Fraga1\Practica01 Extra 02 Jose Angel Doval Fraga1\obj\Debug\Practica01_Extra_02_Jose_Angel_Doval_Fraga1.Properties.Resources.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra 02 Jose Angel Doval Fraga1\Practica01 Extra 02 Jose Angel Doval Fraga1\obj\Debug\Practica01 Extra 02 Jose Angel Doval Fraga1.csproj.GenerateResource.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra 02 Jose Angel Doval Fraga1\Practica01 Extra 02 Jose Angel Doval Fraga1\obj\Debug\Practica01 Extra 02 Jose Angel Doval Fraga1.csproj.CoreCompileInputs.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra 02 Jose Angel Doval Fraga1\Practica01 Extra 02 Jose Angel Doval Fraga1\obj\Debug\Practica01 Extra Jose Angel Doval Fraga.exe
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra 02 Jose Angel Doval Fraga1\Practica01 Extra 02 Jose Angel Doval Fraga1\obj\Debug\Practica01 Extra Jose Angel Doval Fraga.pdb
