@@ -8,3 +8,13 @@ E:\Segundo Curso\Interfaces\Practica01 Extra Jose Angel Doval Fraga\Practica01 E
 E:\Segundo Curso\Interfaces\Practica01 Extra Jose Angel Doval Fraga\Practica01 Extra Jose Angel Doval Fraga\obj\Debug\Practica01 Extra Jose Angel Doval Fraga.csproj.CoreCompileInputs.cache
 E:\Segundo Curso\Interfaces\Practica01 Extra Jose Angel Doval Fraga\Practica01 Extra Jose Angel Doval Fraga\obj\Debug\Practica01 Extra Jose Angel Doval Fraga.exe
 E:\Segundo Curso\Interfaces\Practica01 Extra Jose Angel Doval Fraga\Practica01 Extra Jose Angel Doval Fraga\obj\Debug\Practica01 Extra Jose Angel Doval Fraga.pdb
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra Jose Angel Doval Fraga\Practica01 Extra Jose Angel Doval Fraga\bin\Debug\Practica01 Extra Jose Angel Doval Fraga.exe.config
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra Jose Angel Doval Fraga\Practica01 Extra Jose Angel Doval Fraga\bin\Debug\Practica01 Extra Jose Angel Doval Fraga.exe
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra Jose Angel Doval Fraga\Practica01 Extra Jose Angel Doval Fraga\bin\Debug\Practica01 Extra Jose Angel Doval Fraga.pdb
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra Jose Angel Doval Fraga\Practica01 Extra Jose Angel Doval Fraga\obj\Debug\Practica01 Extra Jose Angel Doval Fraga.csprojAssemblyReference.cache
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra Jose Angel Doval Fraga\Practica01 Extra Jose Angel Doval Fraga\obj\Debug\Practica01_Extra_Jose_Angel_Doval_Fraga.Practica01.resources
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra Jose Angel Doval Fraga\Practica01 Extra Jose Angel Doval Fraga\obj\Debug\Practica01_Extra_Jose_Angel_Doval_Fraga.Properties.Resources.resources
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra Jose Angel Doval Fraga\Practica01 Extra Jose Angel Doval Fraga\obj\Debug\Practica01 Extra Jose Angel Doval Fraga.csproj.GenerateResource.cache
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra Jose Angel Doval Fraga\Practica01 Extra Jose Angel Doval Fraga\obj\Debug\Practica01 Extra Jose Angel Doval Fraga.csproj.CoreCompileInputs.cache
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra Jose Angel Doval Fraga\Practica01 Extra Jose Angel Doval Fraga\obj\Debug\Practica01 Extra Jose Angel Doval Fraga.exe
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica01 Extra Jose Angel Doval Fraga\Practica01 Extra Jose Angel Doval Fraga\obj\Debug\Practica01 Extra Jose Angel Doval Fraga.pdb

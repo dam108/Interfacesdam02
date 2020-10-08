@@ -58,7 +58,7 @@
             this.rdBtn_mujer = new System.Windows.Forms.RadioButton();
             this.rdBtn_hombre = new System.Windows.Forms.RadioButton();
             this.btn_guardar = new System.Windows.Forms.Button();
-            this.lbl_advertencia = new System.Windows.Forms.TextBox();
+            this.lbl_advertencia = new System.Windows.Forms.Label();
             this.grpBox_titulacion.SuspendLayout();
             this.grpBox_perm.SuspendLayout();
             this.grpBox_sex.SuspendLayout();
@@ -267,8 +267,6 @@
             // 
             resources.ApplyResources(this.lbl_advertencia, "lbl_advertencia");
             this.lbl_advertencia.Name = "lbl_advertencia";
-            this.lbl_advertencia.ReadOnly = true;
-            this.lbl_advertencia.TabStop = false;
             // 
             // Practica01
             // 
@@ -276,13 +274,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.Controls.Add(this.lbl_advertencia);
             this.Controls.Add(this.btn_guardar);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.grpBox_perm);
             this.Controls.Add(this.grpBox_sex);
             this.Controls.Add(this.grpBox_titulacion);
-            this.Controls.Add(this.lbl_advertencia);
             this.Controls.Add(this.txtBox_buscar);
             this.Controls.Add(this.txtBox_apellido2);
             this.Controls.Add(this.txtBox_apellido1);
@@ -293,6 +291,8 @@
             this.Controls.Add(this.lbl_Nombre);
             this.Controls.Add(this.lbl_dni);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Practica01";
             this.Load += new System.EventHandler(this.Practica01_Load);
             this.grpBox_titulacion.ResumeLayout(false);
@@ -323,7 +323,6 @@
         private System.Windows.Forms.GroupBox grpBox_perm;
         private System.Windows.Forms.GroupBox grpBox_sex;
         private System.Windows.Forms.Button btn_guardar;
-        private System.Windows.Forms.TextBox lbl_advertencia;
         private System.Windows.Forms.RadioButton rdBtn_otra;
         private System.Windows.Forms.RadioButton rdBtn_uni;
         private System.Windows.Forms.RadioButton rdBtn_fp;
@@ -338,6 +337,7 @@
         private System.Windows.Forms.RadioButton rdBtn_mujer;
         private System.Windows.Forms.RadioButton rdBtn_hombre;
         private System.Windows.Forms.TextBox txtBox_rdbtn_otra;
+        private System.Windows.Forms.Label lbl_advertencia;
     }
 }
 

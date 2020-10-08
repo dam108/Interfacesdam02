@@ -547,7 +547,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;grpBox_titulacion.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="btn_buscar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -574,7 +574,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_buscar.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="txtBox_buscar.Location" type="System.Drawing.Point, System.Drawing">
     <value>362, 517</value>
@@ -625,7 +625,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="chkBox_E.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -796,7 +796,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;grpBox_perm.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="rdBtn_mujer.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -877,7 +877,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;grpBox_sex.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="btn_guardar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -904,34 +904,40 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_guardar.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
+  </data>
+  <data name="lbl_advertencia.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lbl_advertencia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 580</value>
+    <value>33, 574</value>
+  </data>
+  <data name="lbl_advertencia.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="lbl_advertencia.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>634, 29</value>
   </data>
   <data name="lbl_advertencia.Size" type="System.Drawing.Size, System.Drawing">
     <value>634, 29</value>
   </data>
   <data name="lbl_advertencia.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>10</value>
   </data>
-  <data name="lbl_advertencia.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="lbl_advertencia.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="lbl_advertencia.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
   </data>
   <data name="&gt;&gt;lbl_advertencia.Name" xml:space="preserve">
     <value>lbl_advertencia</value>
   </data>
   <data name="&gt;&gt;lbl_advertencia.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbl_advertencia.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbl_advertencia.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
