@@ -7,3 +7,4 @@ E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica02 Doval Fraga Jose 
 E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica02 Doval Fraga Jose Angel\Practica02 Doval Fraga jose Angel Parte 2\obj\Debug\Practica02 Doval Fraga jose Angel Parte 2.csproj.CoreCompileInputs.cache
 E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica02 Doval Fraga Jose Angel\Practica02 Doval Fraga jose Angel Parte 2\obj\Debug\Practica02 Doval Fraga jose Angel Parte 2.exe
 E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica02 Doval Fraga Jose Angel\Practica02 Doval Fraga jose Angel Parte 2\obj\Debug\Practica02 Doval Fraga jose Angel Parte 2.pdb
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica02 Doval Fraga Jose Angel\Practica02 Doval Fraga jose Angel Parte 2\obj\Debug\Practica02 Doval Fraga jose Angel Parte 2.csprojAssemblyReference.cache
