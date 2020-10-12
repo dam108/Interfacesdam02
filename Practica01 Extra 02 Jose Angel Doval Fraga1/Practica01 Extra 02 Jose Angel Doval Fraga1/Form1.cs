@@ -15,7 +15,7 @@ namespace Practica01_Extra_02_Jose_Angel_Doval_Fraga1
     public partial class Practica01 : Form
     {
         //varables globales
-        ficha_persona[] personas;
+        List<Persona> personas;
         public bool cajavalida = true;
         public int indextStructGlobal;
         public int n = 0;
@@ -24,19 +24,9 @@ namespace Practica01_Extra_02_Jose_Angel_Doval_Fraga1
         public Practica01()
         {
             InitializeComponent();
-            personas = new ficha_persona[10];
+            personas = new List<Persona>();
         }
 
-        // Declaración del struct
-        public struct ficha_persona
-        {
-            public string dni, nombre, apellido1, apellido2, strTitulacionMax_otra;
-            public bool permisoA, permisoB, permisoC, permisoD,
-                permisoE, hombre, mujer, titulacionMax_none,
-                titulacionMax_eso, titulacionMax_bach, titulacionMax_fp,
-                titulacionMax_Uni, titulacionMax_otra;
-            public int indexStruct;
-        }
 
         // evento click Btn Guardar
         private void btn_guardar_Click(object sender, EventArgs e)
@@ -85,27 +75,30 @@ namespace Practica01_Extra_02_Jose_Angel_Doval_Fraga1
         //rellenar formulario
         private void rellenarFormulario(String dni)
         {
+            Persona momentaneo = new Persona(dni);
+            int indicePersonas = personas.IndexOf(momentaneo);
+
             limpiarForulario();
-            int n = indextStructGlobal;
-            txtBox_dni.Text = personas[n].dni;
-            txtBox_nombre.Text = personas[n].nombre;
-            txtBox_apellido1.Text = personas[n].apellido1;
-            txtBox_apellido2.Text = personas[n].apellido2;
-            chkBox_A.Checked = personas[n].permisoA;
-            chkBox_B.Checked = personas[n].permisoB;
-            chkBox_C.Checked = personas[n].permisoC;
-            chkBox_D.Checked = personas[n].permisoD;
-            chkBox_E.Checked = personas[n].permisoE;
-            rdBtn_hombre.Checked = personas[n].hombre;
-            rdBtn_mujer.Checked = personas[n].mujer;
-            rdBtn_none.Checked = personas[n].titulacionMax_none;
-            rdBtn_eso.Checked = personas[n].titulacionMax_eso;
-            rdBtn_bach.Checked = personas[n].titulacionMax_bach;
-            rdBtn_fp.Checked = personas[n].titulacionMax_fp;
-            rdBtn_uni.Checked = personas[n].titulacionMax_Uni;
-            rdBtn_otra.Checked = personas[n].titulacionMax_otra;
-            txtBox_rdbtn_otra.Text = personas[n].strTitulacionMax_otra;
+            txtBox_dni.Text = personas[indicePersonas].Dni;
+            txtBox_nombre.Text = personas[indicePersonas].Nombre;
+            txtBox_apellido1.Text = personas[indicePersonas].Apellido1;
+            txtBox_apellido2.Text = personas[indicePersonas].Apellido2;
+            chkBox_A.Checked = personas[indicePersonas].PermisoA;
+            chkBox_B.Checked = personas[indicePersonas].PermisoB;
+            chkBox_C.Checked = personas[indicePersonas].PermisoC;
+            chkBox_D.Checked = personas[indicePersonas].PermisoD;
+            chkBox_E.Checked = personas[indicePersonas].PermisoE;
+            rdBtn_hombre.Checked = personas[indicePersonas].Hombre;
+            rdBtn_mujer.Checked = personas[indicePersonas].Mujer;
+            rdBtn_none.Checked = personas[indicePersonas].TitulacionMax_none;
+            rdBtn_eso.Checked = personas[indicePersonas].TitulacionMax_eso;
+            rdBtn_bach.Checked = personas[indicePersonas].TitulacionMax_bach;
+            rdBtn_fp.Checked = personas[indicePersonas].TitulacionMax_fp;
+            rdBtn_uni.Checked = personas[indicePersonas].TitulacionMax_Uni;
+            rdBtn_otra.Checked = personas[indicePersonas].TitulacionMax_otra;
+            txtBox_rdbtn_otra.Text = personas[indicePersonas].StrTitullacionMax_otra;
             txtBox_dni.BackColor = Color.White;
+
         }
 
         // Metodo para limpiar formulario
@@ -141,25 +134,12 @@ namespace Practica01_Extra_02_Jose_Angel_Doval_Fraga1
         {
             if (n >= 0 & n < 10)
             {
-                personas[n].indexStruct = n;
-                personas[n].dni = txtBox_dni.Text;
-                personas[n].nombre = txtBox_nombre.Text;
-                personas[n].apellido1 = txtBox_apellido1.Text;
-                personas[n].apellido2 = txtBox_apellido2.Text;
-                personas[n].permisoA = chkBox_A.Checked;
-                personas[n].permisoB = chkBox_B.Checked;
-                personas[n].permisoC = chkBox_C.Checked;
-                personas[n].permisoD = chkBox_D.Checked;
-                personas[n].permisoE = chkBox_E.Checked;
-                personas[n].hombre = rdBtn_hombre.Checked;
-                personas[n].mujer = rdBtn_mujer.Checked;
-                personas[n].titulacionMax_none = rdBtn_none.Checked;
-                personas[n].titulacionMax_eso = rdBtn_eso.Checked;
-                personas[n].titulacionMax_bach = rdBtn_bach.Checked;
-                personas[n].titulacionMax_fp = rdBtn_fp.Checked;
-                personas[n].titulacionMax_Uni = rdBtn_uni.Checked;
-                personas[n].titulacionMax_otra = rdBtn_otra.Checked;
-                personas[n].strTitulacionMax_otra = txtBox_rdbtn_otra.Text;
+                personas.Add(new Persona(txtBox_dni.Text, txtBox_nombre.Text, txtBox_apellido1.Text,
+                    txtBox_apellido2.Text, txtBox_rdbtn_otra.Text, chkBox_A.Checked,
+                    chkBox_B.Checked, chkBox_C.Checked, chkBox_D.Checked, chkBox_E.Checked,
+                    rdBtn_hombre.Checked, rdBtn_mujer.Checked, rdBtn_none.Checked,
+                    rdBtn_eso.Checked, rdBtn_bach.Checked, rdBtn_fp.Checked, rdBtn_uni.Checked,
+                    rdBtn_otra.Checked));
 
                 n++;
                 return true;
@@ -195,18 +175,18 @@ namespace Practica01_Extra_02_Jose_Angel_Doval_Fraga1
         // Metodo para ver si el dni que se intenta guardar existe
         private bool existeDni(String dni)
         {
-            foreach (var i in personas)
+
+            Persona momentaneo = new Persona(dni);
+
+            if (personas.Contains(momentaneo))
             {
-                if (dni == i.dni)
-                {
-                    indextStructGlobal = i.indexStruct;
-                    advertenciaUp("Este dni ya existe");
-                    txtBox_dni.Focus();
-                    txtBox_dni.BackColor = Color.OrangeRed;
-                    return true;
-                }
+                advertenciaUp("Este dni ya existe");
+                txtBox_dni.Focus();
+                txtBox_dni.BackColor = Color.OrangeRed;
+                return true;
             }
-            advertenciaDown();
+
+             advertenciaDown();
             return false;
         }
 
