@@ -197,6 +197,7 @@
             this.btnEliminarTodas.TabIndex = 3;
             this.btnEliminarTodas.Text = "Eliminar todas";
             this.btnEliminarTodas.UseVisualStyleBackColor = true;
+            this.btnEliminarTodas.Click += new System.EventHandler(this.btnEliminarTodas_Click);
             // 
             // btnEliminarAlfombra
             // 
@@ -207,6 +208,7 @@
             this.btnEliminarAlfombra.TabIndex = 2;
             this.btnEliminarAlfombra.Text = "Eliminar alfombra";
             this.btnEliminarAlfombra.UseVisualStyleBackColor = true;
+            this.btnEliminarAlfombra.Click += new System.EventHandler(this.btnEliminarAlfombra_Click);
             // 
             // btnInfoAlfombra
             // 
@@ -217,6 +219,7 @@
             this.btnInfoAlfombra.TabIndex = 1;
             this.btnInfoAlfombra.Text = "Información da alfombra";
             this.btnInfoAlfombra.UseVisualStyleBackColor = true;
+            this.btnInfoAlfombra.Click += new System.EventHandler(this.btnInfoAlfombra_Click);
             // 
             // cboAlfombras
             // 
