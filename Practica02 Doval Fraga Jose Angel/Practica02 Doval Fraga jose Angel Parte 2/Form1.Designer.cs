@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.gBox_info = new System.Windows.Forms.GroupBox();
-            this.gBoxGestion = new System.Windows.Forms.GroupBox();
-            this.lblProvincia = new System.Windows.Forms.Label();
-            this.lblLocalidad_info = new System.Windows.Forms.Label();
-            this.cboProvincia = new System.Windows.Forms.ComboBox();
             this.cboLocalidad = new System.Windows.Forms.ComboBox();
-            this.radEliminar = new System.Windows.Forms.RadioButton();
-            this.radModificar = new System.Windows.Forms.RadioButton();
-            this.radAgregar = new System.Windows.Forms.RadioButton();
-            this.lblLocalidad_gestion = new System.Windows.Forms.Label();
-            this.txtLocalidad_gestion = new System.Windows.Forms.TextBox();
+            this.cboProvincia = new System.Windows.Forms.ComboBox();
+            this.lblLocalidad_info = new System.Windows.Forms.Label();
+            this.lblProvincia = new System.Windows.Forms.Label();
+            this.gBoxGestion = new System.Windows.Forms.GroupBox();
             this.btnEjecutar = new System.Windows.Forms.Button();
+            this.txtLocalidad_gestion = new System.Windows.Forms.TextBox();
+            this.radAgregar = new System.Windows.Forms.RadioButton();
+            this.radModificar = new System.Windows.Forms.RadioButton();
+            this.lblLocalidad_gestion = new System.Windows.Forms.Label();
+            this.radEliminar = new System.Windows.Forms.RadioButton();
+            this.lblAdvertencia = new System.Windows.Forms.Label();
             this.gBox_info.SuspendLayout();
             this.gBoxGestion.SuspendLayout();
             this.SuspendLayout();
@@ -57,29 +58,24 @@
             this.gBox_info.TabStop = false;
             this.gBox_info.Text = "Información";
             // 
-            // gBoxGestion
+            // cboLocalidad
             // 
-            this.gBoxGestion.Controls.Add(this.btnEjecutar);
-            this.gBoxGestion.Controls.Add(this.txtLocalidad_gestion);
-            this.gBoxGestion.Controls.Add(this.radAgregar);
-            this.gBoxGestion.Controls.Add(this.radModificar);
-            this.gBoxGestion.Controls.Add(this.lblLocalidad_gestion);
-            this.gBoxGestion.Controls.Add(this.radEliminar);
-            this.gBoxGestion.Location = new System.Drawing.Point(12, 188);
-            this.gBoxGestion.Name = "gBoxGestion";
-            this.gBoxGestion.Size = new System.Drawing.Size(635, 211);
-            this.gBoxGestion.TabIndex = 1;
-            this.gBoxGestion.TabStop = false;
-            this.gBoxGestion.Text = "Gestión de información";
+            this.cboLocalidad.FormattingEnabled = true;
+            this.cboLocalidad.Location = new System.Drawing.Point(118, 78);
+            this.cboLocalidad.Name = "cboLocalidad";
+            this.cboLocalidad.Size = new System.Drawing.Size(495, 29);
+            this.cboLocalidad.TabIndex = 1;
+            this.cboLocalidad.Enter += new System.EventHandler(this.cboLocalidad_Enter);
             // 
-            // lblProvincia
+            // cboProvincia
             // 
-            this.lblProvincia.AutoSize = true;
-            this.lblProvincia.Location = new System.Drawing.Point(22, 34);
-            this.lblProvincia.Name = "lblProvincia";
-            this.lblProvincia.Size = new System.Drawing.Size(74, 21);
-            this.lblProvincia.TabIndex = 0;
-            this.lblProvincia.Text = "Provincia";
+            this.cboProvincia.FormattingEnabled = true;
+            this.cboProvincia.Location = new System.Drawing.Point(118, 31);
+            this.cboProvincia.Name = "cboProvincia";
+            this.cboProvincia.Size = new System.Drawing.Size(495, 29);
+            this.cboProvincia.TabIndex = 1;
+            this.cboProvincia.SelectedIndexChanged += new System.EventHandler(this.cboProvincia_SelectedIndexChanged);
+            this.cboProvincia.Enter += new System.EventHandler(this.cboProvincia_Enter);
             // 
             // lblLocalidad_info
             // 
@@ -90,32 +86,59 @@
             this.lblLocalidad_info.TabIndex = 0;
             this.lblLocalidad_info.Text = "Localidad";
             // 
-            // cboProvincia
+            // lblProvincia
             // 
-            this.cboProvincia.FormattingEnabled = true;
-            this.cboProvincia.Location = new System.Drawing.Point(118, 31);
-            this.cboProvincia.Name = "cboProvincia";
-            this.cboProvincia.Size = new System.Drawing.Size(495, 29);
-            this.cboProvincia.TabIndex = 1;
+            this.lblProvincia.AutoSize = true;
+            this.lblProvincia.Location = new System.Drawing.Point(22, 34);
+            this.lblProvincia.Name = "lblProvincia";
+            this.lblProvincia.Size = new System.Drawing.Size(74, 21);
+            this.lblProvincia.TabIndex = 0;
+            this.lblProvincia.Text = "Provincia";
             // 
-            // cboLocalidad
+            // gBoxGestion
             // 
-            this.cboLocalidad.FormattingEnabled = true;
-            this.cboLocalidad.Location = new System.Drawing.Point(118, 78);
-            this.cboLocalidad.Name = "cboLocalidad";
-            this.cboLocalidad.Size = new System.Drawing.Size(495, 29);
-            this.cboLocalidad.TabIndex = 1;
+            this.gBoxGestion.Controls.Add(this.btnEjecutar);
+            this.gBoxGestion.Controls.Add(this.txtLocalidad_gestion);
+            this.gBoxGestion.Controls.Add(this.radAgregar);
+            this.gBoxGestion.Controls.Add(this.radModificar);
+            this.gBoxGestion.Controls.Add(this.lblLocalidad_gestion);
+            this.gBoxGestion.Controls.Add(this.radEliminar);
+            this.gBoxGestion.Location = new System.Drawing.Point(12, 213);
+            this.gBoxGestion.Name = "gBoxGestion";
+            this.gBoxGestion.Size = new System.Drawing.Size(635, 211);
+            this.gBoxGestion.TabIndex = 1;
+            this.gBoxGestion.TabStop = false;
+            this.gBoxGestion.Text = "Gestión de información";
             // 
-            // radEliminar
+            // btnEjecutar
             // 
-            this.radEliminar.AutoSize = true;
-            this.radEliminar.Location = new System.Drawing.Point(26, 42);
-            this.radEliminar.Name = "radEliminar";
-            this.radEliminar.Size = new System.Drawing.Size(243, 25);
-            this.radEliminar.TabIndex = 0;
-            this.radEliminar.TabStop = true;
-            this.radEliminar.Text = "Eliminar localidad seleccionada";
-            this.radEliminar.UseVisualStyleBackColor = true;
+            this.btnEjecutar.Location = new System.Drawing.Point(307, 42);
+            this.btnEjecutar.Name = "btnEjecutar";
+            this.btnEjecutar.Size = new System.Drawing.Size(306, 87);
+            this.btnEjecutar.TabIndex = 2;
+            this.btnEjecutar.Text = "Ejecutar";
+            this.btnEjecutar.UseVisualStyleBackColor = true;
+            this.btnEjecutar.Click += new System.EventHandler(this.btnEjecutar_Click);
+            // 
+            // txtLocalidad_gestion
+            // 
+            this.txtLocalidad_gestion.Location = new System.Drawing.Point(104, 156);
+            this.txtLocalidad_gestion.Name = "txtLocalidad_gestion";
+            this.txtLocalidad_gestion.Size = new System.Drawing.Size(509, 29);
+            this.txtLocalidad_gestion.TabIndex = 1;
+            this.txtLocalidad_gestion.Leave += new System.EventHandler(this.txtLocalidad_gestion_Leave);
+            // 
+            // radAgregar
+            // 
+            this.radAgregar.AutoSize = true;
+            this.radAgregar.Location = new System.Drawing.Point(26, 104);
+            this.radAgregar.Name = "radAgregar";
+            this.radAgregar.Size = new System.Drawing.Size(139, 25);
+            this.radAgregar.TabIndex = 0;
+            this.radAgregar.TabStop = true;
+            this.radAgregar.Text = "Nueva localidad";
+            this.radAgregar.UseVisualStyleBackColor = true;
+            this.radAgregar.CheckedChanged += new System.EventHandler(this.radAgregar_CheckedChanged);
             // 
             // radModificar
             // 
@@ -128,17 +151,6 @@
             this.radModificar.Text = "Modificar localidad seleccionada";
             this.radModificar.UseVisualStyleBackColor = true;
             // 
-            // radAgregar
-            // 
-            this.radAgregar.AutoSize = true;
-            this.radAgregar.Location = new System.Drawing.Point(26, 104);
-            this.radAgregar.Name = "radAgregar";
-            this.radAgregar.Size = new System.Drawing.Size(139, 25);
-            this.radAgregar.TabIndex = 0;
-            this.radAgregar.TabStop = true;
-            this.radAgregar.Text = "Nueva localidad";
-            this.radAgregar.UseVisualStyleBackColor = true;
-            // 
             // lblLocalidad_gestion
             // 
             this.lblLocalidad_gestion.AutoSize = true;
@@ -148,27 +160,31 @@
             this.lblLocalidad_gestion.TabIndex = 0;
             this.lblLocalidad_gestion.Text = "Localidad";
             // 
-            // txtLocalidad_gestion
+            // radEliminar
             // 
-            this.txtLocalidad_gestion.Location = new System.Drawing.Point(104, 156);
-            this.txtLocalidad_gestion.Name = "txtLocalidad_gestion";
-            this.txtLocalidad_gestion.Size = new System.Drawing.Size(509, 29);
-            this.txtLocalidad_gestion.TabIndex = 1;
+            this.radEliminar.AutoSize = true;
+            this.radEliminar.Location = new System.Drawing.Point(26, 42);
+            this.radEliminar.Name = "radEliminar";
+            this.radEliminar.Size = new System.Drawing.Size(243, 25);
+            this.radEliminar.TabIndex = 0;
+            this.radEliminar.TabStop = true;
+            this.radEliminar.Text = "Eliminar localidad seleccionada";
+            this.radEliminar.UseVisualStyleBackColor = true;
             // 
-            // btnEjecutar
+            // lblAdvertencia
             // 
-            this.btnEjecutar.Location = new System.Drawing.Point(307, 42);
-            this.btnEjecutar.Name = "btnEjecutar";
-            this.btnEjecutar.Size = new System.Drawing.Size(306, 87);
-            this.btnEjecutar.TabIndex = 2;
-            this.btnEjecutar.Text = "Ejecutar";
-            this.btnEjecutar.UseVisualStyleBackColor = true;
+            this.lblAdvertencia.Location = new System.Drawing.Point(12, 176);
+            this.lblAdvertencia.Name = "lblAdvertencia";
+            this.lblAdvertencia.Size = new System.Drawing.Size(635, 34);
+            this.lblAdvertencia.TabIndex = 2;
+            this.lblAdvertencia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 423);
+            this.ClientSize = new System.Drawing.Size(659, 436);
+            this.Controls.Add(this.lblAdvertencia);
             this.Controls.Add(this.gBoxGestion);
             this.Controls.Add(this.gBox_info);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -177,6 +193,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Localidades Doval Fraga Jose Angel";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.gBox_info.ResumeLayout(false);
             this.gBox_info.PerformLayout();
             this.gBoxGestion.ResumeLayout(false);
@@ -199,6 +216,7 @@
         private System.Windows.Forms.RadioButton radModificar;
         private System.Windows.Forms.Label lblLocalidad_gestion;
         private System.Windows.Forms.RadioButton radEliminar;
+        private System.Windows.Forms.Label lblAdvertencia;
     }
 }
 
