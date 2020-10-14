@@ -365,7 +365,7 @@ namespace Practica01_Extra_Jose_Angel_Doval_Fraga
                 string letra = dni.Substring(8);
                 int numeros = Int32.Parse(strnumeros);
                 if (!Char.IsLetter(letra[0]) | Char.ToLower(letra[0]) != calcularLetraDni(numeros)) return false;
-                else return true;
+                else return true; 
             }
             else
             {

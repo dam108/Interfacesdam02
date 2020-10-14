@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "tarea-Practica02 Doval Fraga Jose Angel Parte 1",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}

@@ -172,7 +172,7 @@ namespace Practica02_Doval_Fraga_jose_Angel_Parte_2
         //
         private void refrescarComboBoxes()
         {
-            bsProvincias.ResetBindings(true);
+            //bsProvincias.ResetBindings(true);
             bsLocalidades.ResetBindings(true);
         }
 
