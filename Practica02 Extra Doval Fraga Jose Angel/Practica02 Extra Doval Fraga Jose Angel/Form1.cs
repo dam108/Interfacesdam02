@@ -86,6 +86,8 @@ namespace Practica02_Extra_Doval_Fraga_Jose_Angel
             {
                 AdvertenciaDown();
                 alfombrasPictureBox.Show();
+                // posibles opciones para enseñar en el pictureBox son alfombra1 , alfombra2 , alfombra3
+                //y estan guardadas en la carpeta /pics/ al lado de los ejecutables en /bin/debug/
                 alfombrasPictureBox.ImageLocation = Environment.CurrentDirectory + "/pics/" + Registros[n].modelo + ".jpg";
                 MessageBox.Show("Modelo: " + Registros[n].modelo + "\nColor: " + Registros[n].color +
                                     "\nAncho: " + Registros[n].ancho + "cm\nAlto: " + Registros[n].alto + "cm");
