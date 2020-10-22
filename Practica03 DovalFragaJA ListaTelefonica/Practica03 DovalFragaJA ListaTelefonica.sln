@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica03 DovalFragaJA ListaTelefonica", "Practica03 DovalFragaJA ListaTelefonica\Practica03 DovalFragaJA ListaTelefonica.csproj", "{E32E9B20-1253-423B-9680-54C120691A62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E32E9B20-1253-423B-9680-54C120691A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E32E9B20-1253-423B-9680-54C120691A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E32E9B20-1253-423B-9680-54C120691A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E32E9B20-1253-423B-9680-54C120691A62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54509D86-5842-464A-B097-AB9448B77A4A}
+	EndGlobalSection
+EndGlobal
