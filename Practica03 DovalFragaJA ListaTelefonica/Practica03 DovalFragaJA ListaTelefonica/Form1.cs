@@ -1,17 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.IO;
-using System.Drawing.Imaging;
-using System.Runtime.InteropServices;
 
 namespace Practica03_DovalFragaJA_ListaTelefonica
 {
@@ -28,9 +20,6 @@ namespace Practica03_DovalFragaJA_ListaTelefonica
 
             // inciamos la lista de contactos y creamos dos contactos
             contactos = new List<Persona>();
-            //contactos.Add(new Persona("Jose Doval", "981775263", "doval@gmail.com", "Jose Doval.png"));
-            //contactos.Add(new Persona("Juan Perez", "981798457", "JuanP@gmail.com", "Juan Perez.png"));
-
 
             // Vinculamos la lista de contactos con el ListBox
             listaContactosBS = new BindingSource();
@@ -104,6 +93,9 @@ namespace Practica03_DovalFragaJA_ListaTelefonica
             tel = telefonoTextBox.Text;
             em = emailTextBox.Text;
             nameImg = name + ".png";
+
+            string oldImg = contactos[n].NombreFoto;
+            BorrarImagen(oldImg);
 
             GuardarImagen(nameImg);
             contactos[n].Nombre = name;
