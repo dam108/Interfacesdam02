@@ -1,0 +1,10 @@
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica03 Extra DovalFragaJA ListaTlf\Practica03 Extra DovalFragaJA ListaTlf\bin\Debug\Practica03 DovalFragaJA ListaTelefonica.exe.config
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica03 Extra DovalFragaJA ListaTlf\Practica03 Extra DovalFragaJA ListaTlf\bin\Debug\Practica03 DovalFragaJA ListaTelefonica.exe
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica03 Extra DovalFragaJA ListaTlf\Practica03 Extra DovalFragaJA ListaTlf\bin\Debug\Practica03 DovalFragaJA ListaTelefonica.pdb
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica03 Extra DovalFragaJA ListaTlf\Practica03 Extra DovalFragaJA ListaTlf\obj\Debug\Practica03 Extra DovalFragaJA ListaTlf.csprojAssemblyReference.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica03 Extra DovalFragaJA ListaTlf\Practica03 Extra DovalFragaJA ListaTlf\obj\Debug\Practica03_Extra_DovalFragaJA_ListaTlf.Formulario.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica03 Extra DovalFragaJA ListaTlf\Practica03 Extra DovalFragaJA ListaTlf\obj\Debug\Practica03_Extra_DovalFragaJA_ListaTlf.Properties.Resources.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica03 Extra DovalFragaJA ListaTlf\Practica03 Extra DovalFragaJA ListaTlf\obj\Debug\Practica03 Extra DovalFragaJA ListaTlf.csproj.GenerateResource.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica03 Extra DovalFragaJA ListaTlf\Practica03 Extra DovalFragaJA ListaTlf\obj\Debug\Practica03 Extra DovalFragaJA ListaTlf.csproj.CoreCompileInputs.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica03 Extra DovalFragaJA ListaTlf\Practica03 Extra DovalFragaJA ListaTlf\obj\Debug\Practica03 DovalFragaJA ListaTelefonica.exe
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica03 Extra DovalFragaJA ListaTlf\Practica03 Extra DovalFragaJA ListaTlf\obj\Debug\Practica03 DovalFragaJA ListaTelefonica.pdb
