@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.IO;
+using System.Net.Mail;
 
 namespace Practica03_Extra_DovalFragaJA_ListaTlf
 {
@@ -17,28 +18,119 @@ namespace Practica03_Extra_DovalFragaJA_ListaTlf
         public Formulario()
         {
             InitializeComponent();
+        }
 
+        //
+        // Eventos
+        //
+
+        // Evento para cuanda carga el formulario
+        private void Formulario_Load(object sender, EventArgs e)
+        {
             // inciamos la lista de contactos y creamos dos contactos
             contactos = new List<Persona>();
-            contactos.Add(new Persona("Jose Doval", "981222222", "joseDoval@gmail.com", "Jose Doval.png"));
-            contactos.Add(new Persona("Juan", "111111111", "juan@gmail.com", "Juan.png"));
+            contactos.Add(new Persona("Jose Doval", "981982456", "joseDoval@gmail.com", "Jose Doval.png"));
+            contactos.Add(new Persona("Juan", "981775645", "juan@gmail.com", "Juan.png"));
 
             // Vinculamos la lista de contactos con el ListBox
             listaContactosBS = new BindingSource();
             listaContactosBS.DataSource = contactos;
             contactosListBox.DataSource = listaContactosBS;
-            listaContactosBS.AllowNew = true;
+
+            //listaContactosBS.AllowNew = true; // esto solo hace falta si usamos el boton añadir nuevo que trae el navigator por defecto
             contactosListBox.DisplayMember = "nombre";
             listaNavigator.BindingSource = this.listaContactosBS;
+            
+            // visibilidad en botones del navigator
+            NuevoButton.Enabled = true;
+            modificarButton.Enabled = true;
+            eliminarButton.Enabled = true;
+            anadirButton.Enabled = false;
+            anadirButton.Visible = false;
+
 
         }
 
-        // eliminar item seleccionado 
+        // Evento para cuando seleccionamos un item del listBox
+        private void contactosListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int n = contactosListBox.SelectedIndex;
+            MostrarCampos(n);
+        }
+
+        // Evento eliminar item seleccionado 
         private void eliminarButton_Click(object sender, EventArgs e)
         {
             int n = contactosListBox.SelectedIndex;
             EliminarDatosEnLista(n);
         }
+
+        // Evento para modificar un contacto de la lista
+        private void modificarButton_Click(object sender, EventArgs e)
+        {
+            int n = contactosListBox.SelectedIndex;
+            if (n >= 0)
+            {
+                AdvertenciaDown();
+                if (ComprobarCampos())
+                {
+                    ModificarDatosEnLista(n);
+                    LimpiarCampos();
+                    contactosListBox.Focus();
+                }
+            }
+            else
+            {
+                AdvertenciaUp("No hay contactos que modificar!");
+            }
+
+        }
+
+        // Evento para el boton nuevo
+        private void NuevoButton_Click(object sender, EventArgs e)
+        {
+            HabilitarCajas();
+            AdvertenciaDown();
+            LimpiarCampos();
+            nombreTextBox.Focus();
+            NuevoOff();
+        }
+
+        // Evento cuando haces click en el picture Box para cargar una imagen desde el disco
+        private void fotoPictureBox_Click(object sender, EventArgs e)
+        {
+            CargarImagen();
+        }
+
+        // Evento para añadir un contacto nuevo con el boton añadir
+        private void anadirButton_Click(object sender, EventArgs e)
+        {
+            bool check = ComprobarCampos();
+            bool duplicado = ExisteNombre(nombreTextBox.Text);
+            if (duplicado)
+            {
+                AdvertenciaUp("Este contacto ya existe!");
+            }
+            else
+            {
+                if (check)
+                {
+                    AdvertenciaDown();
+                    GuardarDatosEnLista();
+                    AnadirOff();
+                }
+            }
+        }
+
+        // Evento Keypress en el textbox telefono que no deja escribir nada que no sea un numero
+        private void telefonoTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar); // solo deja pulsar numeros 
+        }
+
+        //
+        // Metodos
+        //
 
         // Metodo para Eliminar Datos en lista
         private void EliminarDatosEnLista(int n)
@@ -59,27 +151,6 @@ namespace Practica03_Extra_DovalFragaJA_ListaTlf
             else
             {
                 AdvertenciaUp("No hay contactos a eliminar");
-            }
-
-        }
-
-        // Evento para modificar un contacto de la lista
-        private void modificarButton_Click(object sender, EventArgs e)
-        {
-            int n = contactosListBox.SelectedIndex;
-            if (n >= 0)
-            {
-                AdvertenciaDown();
-                if (ComprobarCampos())
-                {
-                    ModificarDatosEnLista(n);
-                    LimpiarCampos();
-                    contactosListBox.Focus();
-                }
-            }
-            else
-            {
-                AdvertenciaUp("No hay contactos que modificar!");
             }
 
         }
@@ -105,13 +176,6 @@ namespace Practica03_Extra_DovalFragaJA_ListaTlf
             listaContactosBS.ResetBindings(false);
         }
 
-        // Evento para cuando seleccionamos un item del listBox
-        private void contactosListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int n = contactosListBox.SelectedIndex;
-            MostrarCampos(n);
-        }
-
         // Metodo para mostrar los campos del item seleccionado
         private void MostrarCampos(int n)
         {
@@ -134,16 +198,6 @@ namespace Practica03_Extra_DovalFragaJA_ListaTlf
                 //advertimos de que no hay ningun contacto
                 AdvertenciaUp("No hay ningun contacto , pulsa nuevo para crear uno");
             }
-        }
-
-        // Evento para el boton nuevo
-        private void NuevoButton_Click(object sender, EventArgs e)
-        {
-            HabilitarCajas();
-            AdvertenciaDown();
-            LimpiarCampos();
-            nombreTextBox.Focus();
-            NuevoOff();
         }
 
         // Metodo para cambiar el boton nuevo por añadir
@@ -181,12 +235,6 @@ namespace Practica03_Extra_DovalFragaJA_ListaTlf
 
         }
 
-        // Evento cuando haces click en el picture Box para cargar una imagen desde el disco
-        private void fotoPictureBox_Click(object sender, EventArgs e)
-        {
-            CargarImagen();
-        }
-
         // Metodo que abre un explorador de archivos y devuelve una imagen 
         private void CargarImagen()
         {
@@ -200,26 +248,6 @@ namespace Practica03_Extra_DovalFragaJA_ListaTlf
             else
             {
                 MessageBox.Show("No se ha seleccionado ninguna imagen", "");
-            }
-        }
-
-        // Evento para añadir un contacto nuevo con el boton añadir
-        private void anadirButton_Click(object sender, EventArgs e)
-        {
-            bool check = ComprobarCampos();
-            bool duplicado = ExisteNombre(nombreTextBox.Text);
-            if (duplicado)
-            {
-                AdvertenciaUp("Este contacto ya existe!");
-            }
-            else
-            {
-                if (check)
-                {
-                    AdvertenciaDown();
-                    GuardarDatosEnLista();
-                    AnadirOff();
-                }
             }
         }
 
@@ -262,7 +290,7 @@ namespace Practica03_Extra_DovalFragaJA_ListaTlf
         // Metodo para comprobar que todos los campos estan cubiertos
         private bool ComprobarCampos()
         {
-            if (ComprobarNombre() && ComprobarTelefono() && ComprobarEmail() && ComprobarFoto())
+            if (ComprobarNombre() && ComprobarTelefono() && ComprobarEmail(emailTextBox.Text) && ComprobarFoto())
             {
                 AdvertenciaDown();
                 return true;
@@ -289,25 +317,21 @@ namespace Practica03_Extra_DovalFragaJA_ListaTlf
         }
 
         // Metodo para comprobar el textBox del email
-        private bool ComprobarEmail()
+        private bool ComprobarEmail(string correo)
         {
-            String expresion;
-            expresion = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
-            if (Regex.IsMatch(emailTextBox.Text, expresion))
+            try
             {
-                if (Regex.Replace(emailTextBox.Text, expresion, String.Empty).Length == 0)
-                {
-                    AdvertenciaDown();
-                    return true;
-                }
-                else
-                {
-                    AdvertenciaUp("Escriba un email valido! (nombre@dominio.com)");
-                    emailTextBox.Focus();
-                    return false;
-                }
+                MailAddress m = new MailAddress(correo);
+                AdvertenciaDown();
+                return true;
             }
-            else
+            catch (FormatException)
+            {
+                AdvertenciaUp("Escriba un email valido! (nombre@dominio.com)");
+                emailTextBox.Focus();
+                return false;
+            }
+            catch (ArgumentException)
             {
                 AdvertenciaUp("Escriba un email valido! (nombre@dominio.com)");
                 emailTextBox.Focus();
@@ -348,15 +372,9 @@ namespace Practica03_Extra_DovalFragaJA_ListaTlf
         //Metodo para comprobar si el nombre existe o no
         private bool ExisteNombre(string name)
         {
-            string txt = name;
-            foreach (var x in contactos)
-            {
-                if (x.Nombre == txt)
-                {
-                    return true;
-                }
-            }
-            return false;
+            Persona momentaneo = new Persona(name, "", "", "");
+            if (contactos.Contains(momentaneo)) return true;
+            else return false;
         }
 
         // Metodos para comprobar si el valor introducido es numerico
@@ -370,12 +388,11 @@ namespace Practica03_Extra_DovalFragaJA_ListaTlf
             return true;
         }
 
-        // Advertencia
+        // Metodos Advertencias
         private void AdvertenciaDown()
         {
             advertenciaLbl.Visible = false;
         }
-
         private void AdvertenciaUp(string txt)
         {
             advertenciaLbl.Visible = true;
@@ -383,7 +400,7 @@ namespace Practica03_Extra_DovalFragaJA_ListaTlf
             advertenciaLbl.Text = txt;
         }
 
-        // habilitar y deshabilitar cajas de texto
+        // Metodos para habilitar y deshabilitar cajas de texto
         private void HabilitarCajas()
         {
             nombreTextBox.Enabled = true;
@@ -397,22 +414,6 @@ namespace Practica03_Extra_DovalFragaJA_ListaTlf
             telefonoTextBox.Enabled = false;
             emailTextBox.Enabled = false;
             fotoPictureBox.Enabled = false;
-        }
-
-        // Evento Keypress en el textbox telefono que no deja escribir nada que no sea un numero
-        private void telefonoTextBox_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar); // solo deja pulsar numeros 
-        }
-
-        // Evento para cuanda carga el formulario
-        private void Formulario_Load(object sender, EventArgs e)
-        {
-            NuevoButton.Enabled = true;
-            modificarButton.Enabled = true;
-            eliminarButton.Enabled = true;
-            anadirButton.Enabled = false;
-            anadirButton.Visible = false;
         }
     }
 }

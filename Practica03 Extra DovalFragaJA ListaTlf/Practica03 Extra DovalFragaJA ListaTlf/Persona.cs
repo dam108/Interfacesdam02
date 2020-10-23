@@ -24,5 +24,12 @@ namespace Practica03_Extra_DovalFragaJA_ListaTlf
         public string Telefono { get => telefono; set => telefono = value; }
         public string Email { get => email; set => email = value; }
         public string NombreFoto { get => nombreFoto; set => nombreFoto = value; }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Persona persona &&
+                   nombre == persona.nombre;
+        }
     }
+
 }

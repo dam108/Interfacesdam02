@@ -50,10 +50,10 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.NuevoButton = new System.Windows.Forms.ToolStripButton();
-            this.eliminarButton = new System.Windows.Forms.ToolStripButton();
             this.modificarButton = new System.Windows.Forms.ToolStripButton();
             this.anadirButton = new System.Windows.Forms.ToolStripButton();
+            this.NuevoButton = new System.Windows.Forms.ToolStripButton();
+            this.eliminarButton = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.fotoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaNavigator)).BeginInit();
             this.listaNavigator.SuspendLayout();
@@ -158,9 +158,9 @@
             // 
             // listaNavigator
             // 
-            this.listaNavigator.AddNewItem = this.NuevoButton;
+            this.listaNavigator.AddNewItem = null;
             this.listaNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.listaNavigator.DeleteItem = this.eliminarButton;
+            this.listaNavigator.DeleteItem = null;
             this.listaNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -254,26 +254,6 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // NuevoButton
-            // 
-            this.NuevoButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.NuevoButton.Name = "bindingNavigatorAddNewItem";
-            this.NuevoButton.RightToLeftAutoMirrorImage = true;
-            this.NuevoButton.Size = new System.Drawing.Size(46, 22);
-            this.NuevoButton.Text = "Nuevo";
-            this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
-            // 
-            // eliminarButton
-            // 
-            this.eliminarButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.eliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("eliminarButton.Image")));
-            this.eliminarButton.Name = "bindingNavigatorDeleteItem";
-            this.eliminarButton.RightToLeftAutoMirrorImage = true;
-            this.eliminarButton.Size = new System.Drawing.Size(54, 22);
-            this.eliminarButton.Text = "Eliminar";
-            this.eliminarButton.Click += new System.EventHandler(this.eliminarButton_Click);
-            // 
             // modificarButton
             // 
             this.modificarButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -293,6 +273,26 @@
             this.anadirButton.Size = new System.Drawing.Size(46, 22);
             this.anadirButton.Text = "Añadir";
             this.anadirButton.Click += new System.EventHandler(this.anadirButton_Click);
+            // 
+            // NuevoButton
+            // 
+            this.NuevoButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.NuevoButton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton.Image")));
+            this.NuevoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.NuevoButton.Name = "NuevoButton";
+            this.NuevoButton.Size = new System.Drawing.Size(46, 22);
+            this.NuevoButton.Text = "Nuevo";
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
+            // 
+            // eliminarButton
+            // 
+            this.eliminarButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.eliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("eliminarButton.Image")));
+            this.eliminarButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.eliminarButton.Name = "eliminarButton";
+            this.eliminarButton.Size = new System.Drawing.Size(54, 22);
+            this.eliminarButton.Text = "Eliminar";
+            this.eliminarButton.Click += new System.EventHandler(this.eliminarButton_Click);
             // 
             // Formulario
             // 
@@ -340,9 +340,7 @@
         private System.Windows.Forms.Label fotoLbl;
         private System.Windows.Forms.Label advertenciaLbl;
         private System.Windows.Forms.BindingNavigator listaNavigator;
-        private System.Windows.Forms.ToolStripButton NuevoButton;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton eliminarButton;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
@@ -353,6 +351,8 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton modificarButton;
         private System.Windows.Forms.ToolStripButton anadirButton;
+        private System.Windows.Forms.ToolStripButton NuevoButton;
+        private System.Windows.Forms.ToolStripButton eliminarButton;
     }
 }
 
