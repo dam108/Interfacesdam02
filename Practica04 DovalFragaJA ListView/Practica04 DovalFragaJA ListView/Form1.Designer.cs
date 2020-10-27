@@ -50,14 +50,14 @@
             this.anadirProfesion_Btn = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.trabajadores_ListView = new System.Windows.Forms.ListView();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.detalleTrabajador_TextBox = new System.Windows.Forms.TextBox();
-            this.eliminarBtn = new System.Windows.Forms.Button();
-            this.engadirBtn = new System.Windows.Forms.Button();
-            this.exitBtn = new System.Windows.Forms.Button();
             this.nombre_ListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.provincia_ListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.profesion_ListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.detalleTrabajador_TextBox = new System.Windows.Forms.TextBox();
+            this.eliminarTrabajadorBtn = new System.Windows.Forms.Button();
+            this.engadirBtn = new System.Windows.Forms.Button();
+            this.exitBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -89,14 +89,14 @@
             this.apellido2_TextBox.Location = new System.Drawing.Point(106, 144);
             this.apellido2_TextBox.Name = "apellido2_TextBox";
             this.apellido2_TextBox.Size = new System.Drawing.Size(490, 29);
-            this.apellido2_TextBox.TabIndex = 1;
+            this.apellido2_TextBox.TabIndex = 3;
             // 
             // apellido1_TextBox
             // 
             this.apellido1_TextBox.Location = new System.Drawing.Point(106, 107);
             this.apellido1_TextBox.Name = "apellido1_TextBox";
             this.apellido1_TextBox.Size = new System.Drawing.Size(490, 29);
-            this.apellido1_TextBox.TabIndex = 1;
+            this.apellido1_TextBox.TabIndex = 2;
             // 
             // nombre_TextBox
             // 
@@ -110,7 +110,7 @@
             this.dni_TextBox.Location = new System.Drawing.Point(106, 35);
             this.dni_TextBox.Name = "dni_TextBox";
             this.dni_TextBox.Size = new System.Drawing.Size(490, 29);
-            this.dni_TextBox.TabIndex = 1;
+            this.dni_TextBox.TabIndex = 0;
             // 
             // label4
             // 
@@ -176,7 +176,7 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Size = new System.Drawing.Size(603, 123);
-            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Provincia do traballador";
             // 
@@ -201,7 +201,7 @@
             this.eliminarProvincia_Btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.eliminarProvincia_Btn.Name = "eliminarProvincia_Btn";
             this.eliminarProvincia_Btn.Size = new System.Drawing.Size(265, 37);
-            this.eliminarProvincia_Btn.TabIndex = 1;
+            this.eliminarProvincia_Btn.TabIndex = 2;
             this.eliminarProvincia_Btn.Text = "Eliminar Provincia";
             this.eliminarProvincia_Btn.UseVisualStyleBackColor = true;
             this.eliminarProvincia_Btn.Click += new System.EventHandler(this.eliminarProvincia_Btn_Click);
@@ -212,7 +212,7 @@
             this.anadirProvincia_Btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.anadirProvincia_Btn.Name = "anadirProvincia_Btn";
             this.anadirProvincia_Btn.Size = new System.Drawing.Size(265, 37);
-            this.anadirProvincia_Btn.TabIndex = 1;
+            this.anadirProvincia_Btn.TabIndex = 3;
             this.anadirProvincia_Btn.Text = "Engadir Provincia";
             this.anadirProvincia_Btn.UseVisualStyleBackColor = true;
             this.anadirProvincia_Btn.Click += new System.EventHandler(this.anadirProvincia_Btn_Click);
@@ -228,7 +228,7 @@
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox3.Size = new System.Drawing.Size(603, 209);
-            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Profesión do traballador";
             // 
@@ -254,7 +254,7 @@
             this.eliminarProfesion_Btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.eliminarProfesion_Btn.Name = "eliminarProfesion_Btn";
             this.eliminarProfesion_Btn.Size = new System.Drawing.Size(265, 37);
-            this.eliminarProfesion_Btn.TabIndex = 1;
+            this.eliminarProfesion_Btn.TabIndex = 2;
             this.eliminarProfesion_Btn.Text = "Eliminar Profesión";
             this.eliminarProfesion_Btn.UseVisualStyleBackColor = true;
             this.eliminarProfesion_Btn.Click += new System.EventHandler(this.eliminarProfesion_Btn_Click);
@@ -265,7 +265,7 @@
             this.anadirProfesion_Btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.anadirProfesion_Btn.Name = "anadirProfesion_Btn";
             this.anadirProfesion_Btn.Size = new System.Drawing.Size(265, 37);
-            this.anadirProfesion_Btn.TabIndex = 1;
+            this.anadirProfesion_Btn.TabIndex = 3;
             this.anadirProfesion_Btn.Text = "Engadir Profesión";
             this.anadirProfesion_Btn.UseVisualStyleBackColor = true;
             this.anadirProfesion_Btn.Click += new System.EventHandler(this.anadirProfesion_Btn_Click);
@@ -278,7 +278,7 @@
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox4.Size = new System.Drawing.Size(603, 272);
-            this.groupBox4.TabIndex = 0;
+            this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Traballadores dispoñibles";
             // 
@@ -290,62 +290,13 @@
             this.profesion_ListView});
             this.trabajadores_ListView.HideSelection = false;
             this.trabajadores_ListView.Location = new System.Drawing.Point(8, 31);
+            this.trabajadores_ListView.MultiSelect = false;
             this.trabajadores_ListView.Name = "trabajadores_ListView";
             this.trabajadores_ListView.Size = new System.Drawing.Size(588, 233);
             this.trabajadores_ListView.TabIndex = 0;
             this.trabajadores_ListView.UseCompatibleStateImageBehavior = false;
             this.trabajadores_ListView.View = System.Windows.Forms.View.Details;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.detalleTrabajador_TextBox);
-            this.groupBox5.Location = new System.Drawing.Point(634, 356);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox5.Size = new System.Drawing.Size(603, 209);
-            this.groupBox5.TabIndex = 0;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Detalle do traballador";
-            // 
-            // detalleTrabajador_TextBox
-            // 
-            this.detalleTrabajador_TextBox.Location = new System.Drawing.Point(8, 31);
-            this.detalleTrabajador_TextBox.Multiline = true;
-            this.detalleTrabajador_TextBox.Name = "detalleTrabajador_TextBox";
-            this.detalleTrabajador_TextBox.Size = new System.Drawing.Size(529, 165);
-            this.detalleTrabajador_TextBox.TabIndex = 1;
-            // 
-            // eliminarBtn
-            // 
-            this.eliminarBtn.Location = new System.Drawing.Point(634, 297);
-            this.eliminarBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.eliminarBtn.Name = "eliminarBtn";
-            this.eliminarBtn.Size = new System.Drawing.Size(603, 37);
-            this.eliminarBtn.TabIndex = 1;
-            this.eliminarBtn.Text = "Eliminar traballador";
-            this.eliminarBtn.UseVisualStyleBackColor = true;
-            // 
-            // engadirBtn
-            // 
-            this.engadirBtn.Location = new System.Drawing.Point(13, 594);
-            this.engadirBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.engadirBtn.Name = "engadirBtn";
-            this.engadirBtn.Size = new System.Drawing.Size(603, 37);
-            this.engadirBtn.TabIndex = 1;
-            this.engadirBtn.Text = "Engadir traballador";
-            this.engadirBtn.UseVisualStyleBackColor = true;
-            this.engadirBtn.Click += new System.EventHandler(this.engadirBtn_Click);
-            // 
-            // exitBtn
-            // 
-            this.exitBtn.Location = new System.Drawing.Point(634, 594);
-            this.exitBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(603, 37);
-            this.exitBtn.TabIndex = 1;
-            this.exitBtn.Text = "Pechar a aplicación";
-            this.exitBtn.UseVisualStyleBackColor = true;
+            this.trabajadores_ListView.DoubleClick += new System.EventHandler(this.trabajadores_ListView_DoubleClick);
             // 
             // nombre_ListView
             // 
@@ -362,6 +313,59 @@
             this.profesion_ListView.Text = "Profesion";
             this.profesion_ListView.Width = 184;
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.detalleTrabajador_TextBox);
+            this.groupBox5.Location = new System.Drawing.Point(634, 356);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox5.Size = new System.Drawing.Size(603, 209);
+            this.groupBox5.TabIndex = 6;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Detalle do traballador";
+            // 
+            // detalleTrabajador_TextBox
+            // 
+            this.detalleTrabajador_TextBox.Location = new System.Drawing.Point(8, 31);
+            this.detalleTrabajador_TextBox.Multiline = true;
+            this.detalleTrabajador_TextBox.Name = "detalleTrabajador_TextBox";
+            this.detalleTrabajador_TextBox.Size = new System.Drawing.Size(529, 165);
+            this.detalleTrabajador_TextBox.TabIndex = 0;
+            // 
+            // eliminarTrabajadorBtn
+            // 
+            this.eliminarTrabajadorBtn.Location = new System.Drawing.Point(634, 297);
+            this.eliminarTrabajadorBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.eliminarTrabajadorBtn.Name = "eliminarTrabajadorBtn";
+            this.eliminarTrabajadorBtn.Size = new System.Drawing.Size(603, 37);
+            this.eliminarTrabajadorBtn.TabIndex = 5;
+            this.eliminarTrabajadorBtn.Text = "Eliminar traballador";
+            this.eliminarTrabajadorBtn.UseVisualStyleBackColor = true;
+            this.eliminarTrabajadorBtn.Click += new System.EventHandler(this.eliminarTrabajadorBtn_Click);
+            // 
+            // engadirBtn
+            // 
+            this.engadirBtn.Location = new System.Drawing.Point(13, 594);
+            this.engadirBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.engadirBtn.Name = "engadirBtn";
+            this.engadirBtn.Size = new System.Drawing.Size(603, 37);
+            this.engadirBtn.TabIndex = 3;
+            this.engadirBtn.Text = "Engadir traballador";
+            this.engadirBtn.UseVisualStyleBackColor = true;
+            this.engadirBtn.Click += new System.EventHandler(this.engadirBtn_Click);
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.Location = new System.Drawing.Point(634, 594);
+            this.exitBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(603, 37);
+            this.exitBtn.TabIndex = 7;
+            this.exitBtn.Text = "Pechar a aplicación";
+            this.exitBtn.UseVisualStyleBackColor = true;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            // 
             // Formulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -369,7 +373,7 @@
             this.ClientSize = new System.Drawing.Size(1248, 700);
             this.Controls.Add(this.engadirBtn);
             this.Controls.Add(this.exitBtn);
-            this.Controls.Add(this.eliminarBtn);
+            this.Controls.Add(this.eliminarTrabajadorBtn);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.advertencia_Lbl);
             this.Controls.Add(this.groupBox2);
@@ -405,7 +409,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button eliminarBtn;
+        private System.Windows.Forms.Button eliminarTrabajadorBtn;
         private System.Windows.Forms.Button engadirBtn;
         private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.TextBox apellido2_TextBox;

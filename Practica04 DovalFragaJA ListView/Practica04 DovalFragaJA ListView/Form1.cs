@@ -18,7 +18,7 @@ namespace Practica04_DovalFragaJA_ListView
         public List<string> profesiones;
         BindingSource listaProvinciasBS = new BindingSource();
         BindingSource listaProfesionesBS = new BindingSource();
-
+        ListViewItem item;
 
         public Formulario()
         {
@@ -30,9 +30,9 @@ namespace Practica04_DovalFragaJA_ListView
         private void Formulario_Load(object sender, EventArgs e)
         {
             // inicializamos listas
-            trabajadores = new List<Trabajador>() { new Trabajador("79336700V", "Jose Angel", "Doval", "Fraga", 1, 3) };
-            provincias = new List<string>() {"A Coruña", "Lugo", "Ourense"} ;
-            profesiones = new List<string>() {"Carpintero", "Albañil", "Contable", "Desarrollador"};
+            provincias = new List<string>() { "A Coruña", "Lugo", "Ourense" };
+            profesiones = new List<string>() { "Carpintero", "Albañil", "Contable", "Desarrollador" };
+            trabajadores = new List<Trabajador>() { new Trabajador("79336700V", "Jose Angel", "Doval", "Fraga", provincias[0], profesiones[3]) };
             ordenarlistas();
 
             // Binding de combobox y listBox
@@ -41,6 +41,36 @@ namespace Practica04_DovalFragaJA_ListView
 
             listaProfesionesBS.DataSource = profesiones;
             profesion_ListBox.DataSource = listaProfesionesBS;
+
+            // ListView
+            trabajadores_ListView.FullRowSelect = true;
+            item = new ListViewItem();
+            ActualizarListView();
+
+        }
+
+        private void trabajadores_ListView_DoubleClick(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Has hecho doble click en una fila");
+            int n = trabajadores_ListView.SelectedIndices[0];
+            mostrarDetalleTrabajador(n);
+        }
+
+        private void eliminarTrabajadorBtn_Click(object sender, EventArgs e)
+        {
+            int n = trabajadores_ListView.SelectedIndices[0];
+
+            if (n >= 0)
+            {
+                AdvertenciaDown();
+                trabajadores.RemoveAt(n);
+                ActualizarVinculos();
+            }
+            else
+            {
+                AdvertenciaUp("No hay trabajadores para borrar");
+            }
+
         }
 
         private void anadirProvincia_Btn_Click(object sender, EventArgs e)
@@ -116,7 +146,7 @@ namespace Practica04_DovalFragaJA_ListView
             {
                 AdvertenciaDown();
 
-                if (Comprobaciones.existeDni(dni_TextBox.Text, trabajadores))
+                if (!Comprobaciones.existeDni(dni_TextBox.Text, trabajadores))
                 {
                     AdvertenciaDown();
 
@@ -136,7 +166,9 @@ namespace Practica04_DovalFragaJA_ListView
                                     if (Comprobaciones.profesionSeleccionada(profesion_ListBox.SelectedIndex))
                                     {
                                         AdvertenciaDown();
-                                        trabajadores.Add(new Trabajador(dni_TextBox.Text, nombre_TextBox.Text, apellido1_TextBox.Text, apellido2_TextBox.Text, provincias_ComboBox.SelectedIndex, profesion_ListBox.SelectedIndex));
+                                        trabajadores.Add(new Trabajador(dni_TextBox.Text, nombre_TextBox.Text, apellido1_TextBox.Text,
+                                            apellido2_TextBox.Text, provincias_ComboBox.SelectedItem.ToString(),
+                                            profesion_ListBox.SelectedItem.ToString()));
                                         ActualizarVinculos();
                                         limpiarCajas();
                                     }
@@ -184,17 +216,41 @@ namespace Practica04_DovalFragaJA_ListView
 
         }
 
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
         // Métodos
+
+        private void mostrarDetalleTrabajador(int n)
+        {
+            string txt = string.Format("DATOS DO TRABALLADOR: {0}DNI: {1}{0}NOME: {2}{0}APELLIDO 1: {3}{0}APELLIDO 2: {4}{0}PROVINCIA: {5}{0}PROFESION: {6}{0}", Environment.NewLine,
+                trabajadores[n].Dni, trabajadores[n].Nombre, trabajadores[n].Apellido1, trabajadores[n].Apellido2, trabajadores[n].Provincia, trabajadores[n].Profesion);
+
+            detalleTrabajador_TextBox.Text = txt;
+        }
+
+        private void ActualizarListView()
+        {
+            trabajadores_ListView.Items.Clear();
+            for (int i = 0; i < trabajadores.Count; i++)
+            {
+                item = trabajadores_ListView.Items.Add(trabajadores[i].Nombre + " " + trabajadores[i].Apellido1 + " " + trabajadores[i].Apellido2);
+                item.SubItems.Add(trabajadores[i].Provincia);
+                item.SubItems.Add(trabajadores[i].Profesion);
+            }
+        }
 
         private void ActualizarVinculos()
         {
             listaProfesionesBS.ResetBindings(false);
             listaProvinciasBS.ResetBindings(false);
+            ActualizarListView();
         }
 
         private void ordenarlistas() 
         {
-            trabajadores.Sort();
             provincias.Sort();
             profesiones.Sort();
         }

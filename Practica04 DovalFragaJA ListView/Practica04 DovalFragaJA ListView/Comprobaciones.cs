@@ -10,47 +10,46 @@ namespace Practica04_DovalFragaJA_ListView
     {
         public static bool dniOK(string dni)
         {
-            // Agregar codigo que compruebe si el dni tiene el formato correcto
-            // mientras
-            if (dni != "") return true;
+            if (dni.Length == 9)
+            {
+                string strnumeros = dni.Substring(0, 8);
+                for (int i = 0; i < strnumeros.Length; i++)
+                {
+                    char a = strnumeros[i];
+                    if (!char.IsDigit(a)) return false;
+                }
+                string letra = dni.Substring(8);
+                int numeros = Int32.Parse(strnumeros);
+                if (!char.IsLetter(letra[0]) | char.ToLower(letra[0]) != calcularLetraDni(numeros)) return false;
+                else return true;
+            }
             else return false;
+        }
+
+        private static char calcularLetraDni(int n)
+        {
+            string minusculas = "trwagmyfpdxbnjzsqvhlcke";
+            int resto = n % 23;
+            return minusculas[resto];
         }
 
         public static bool existeDni(string dni, List<Trabajador> lista)
         {
-            // Agregar codigo que compruebe si el dni ya existe dentro de la lista de trabajadores
-            // mientras
-            return true;
+            Trabajador momentaneo = new Trabajador(dni);
+            if (lista.Contains(momentaneo)) return true;
+            else return false;
         }
 
         public static bool nombreOK(string nombre)
         {
-            // Agregar codigo que compruebe si nombre tiene formato correcto
-            // mientras
             if (nombre != "") return true;
             else return false;
         }
 
         public static bool apellidoOK(string nombre)
         {
-            // Agregar codigo que compruebe si apellido tiene formato correcto
-            // mientras
             if (nombre != "") return true;
             else return false;
-        }
-
-        public static bool provinciaOK(List<string> p)
-        {
-            // Agregar codigo que compruebe si la provincia es correcta
-            // mientras
-            return true;
-        }
-
-        public static bool profesionOK(List<string> p)
-        {
-            // Agregar codigo que compruebe si la profesión es correcta
-            // mientras
-            return true;
         }
 
         public static bool cajaVacia(string txt)
