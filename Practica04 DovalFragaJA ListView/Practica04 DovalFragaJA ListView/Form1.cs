@@ -18,7 +18,6 @@ namespace Practica04_DovalFragaJA_ListView
         public List<string> profesiones;
         BindingSource listaProvinciasBS = new BindingSource();
         BindingSource listaProfesionesBS = new BindingSource();
-        bool todoOK = true;
 
 
         public Formulario()
@@ -31,7 +30,7 @@ namespace Practica04_DovalFragaJA_ListView
         private void Formulario_Load(object sender, EventArgs e)
         {
             // inicializamos listas
-            trabajadores = new List<Trabajador>() { new Trabajador("79336700V", "Jose Angel", "Doval", "Fraga", "A Coruña", "Desarrollador") };
+            trabajadores = new List<Trabajador>() { new Trabajador("79336700V", "Jose Angel", "Doval", "Fraga", 1, 3) };
             provincias = new List<string>() {"A Coruña", "Lugo", "Ourense"} ;
             profesiones = new List<string>() {"Carpintero", "Albañil", "Contable", "Desarrollador"};
             ordenarlistas();
@@ -113,6 +112,76 @@ namespace Practica04_DovalFragaJA_ListView
         private void engadirBtn_Click(object sender, EventArgs e)
         {
 
+            if (Comprobaciones.dniOK(dni_TextBox.Text))
+            {
+                AdvertenciaDown();
+
+                if (Comprobaciones.existeDni(dni_TextBox.Text, trabajadores))
+                {
+                    AdvertenciaDown();
+
+                    if (Comprobaciones.nombreOK(nombre_TextBox.Text))
+                    {
+                        AdvertenciaDown();
+                        if (Comprobaciones.apellidoOK(apellido1_TextBox.Text))
+                        {
+                            AdvertenciaDown();
+                            if (Comprobaciones.apellidoOK(apellido2_TextBox.Text))
+                            {
+                                AdvertenciaDown();
+
+                                if (Comprobaciones.provinciaSeleccionada(provincias_ComboBox.SelectedIndex))
+                                {
+                                    AdvertenciaDown();
+                                    if (Comprobaciones.profesionSeleccionada(profesion_ListBox.SelectedIndex))
+                                    {
+                                        AdvertenciaDown();
+                                        trabajadores.Add(new Trabajador(dni_TextBox.Text, nombre_TextBox.Text, apellido1_TextBox.Text, apellido2_TextBox.Text, provincias_ComboBox.SelectedIndex, profesion_ListBox.SelectedIndex));
+                                        ActualizarVinculos();
+                                        limpiarCajas();
+                                    }
+                                    else
+                                    {
+                                        AdvertenciaUp("Seleccione una profesion");
+                                        provincias_ComboBox.Focus();
+                                    }
+                                }
+                                else
+                                {
+                                    AdvertenciaUp("Seleccione una provincia");
+                                    provincias_ComboBox.Focus();
+                                }
+                            }
+                            else
+                            {
+                                AdvertenciaUp("El campo del segundo apellido no se puede dejar vacio");
+                                apellido2_TextBox.Focus();
+                            }
+                        }
+                        else
+                        {
+                            AdvertenciaUp("El campo del primer apellido no se puede dejar vacio");
+                            apellido1_TextBox.Focus();
+                        }
+                    }
+                    else
+                    {
+                        AdvertenciaUp("El campo del nombre no se puede dejar vacio");
+                        nombre_TextBox.Focus();
+                    }
+                }
+                else
+                {
+                    AdvertenciaUp("Este trabajador ya existe, introduzca otro dni");
+                    dni_TextBox.Focus();
+                }
+            }
+            else
+            {
+                AdvertenciaUp("El formato del dni no es valido");
+                dni_TextBox.Focus();
+            }
+
         }
 
         // Métodos
@@ -139,6 +208,14 @@ namespace Practica04_DovalFragaJA_ListView
         public void AdvertenciaDown()
         {
             advertencia_Lbl.Visible = false;
+        }
+
+        private void limpiarCajas()
+        {
+            dni_TextBox.Text = "";
+            nombre_TextBox.Text = "";
+            apellido1_TextBox.Text = "";
+            apellido2_TextBox.Text = "";
         }
 
     }

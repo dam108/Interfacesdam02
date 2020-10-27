@@ -59,6 +59,17 @@ namespace Practica04_DovalFragaJA_ListView
             else return false;
         }
 
+        public static bool provinciaSeleccionada(int n)
+        {
+            if (n >= 0) return true;
+            else return false;
+        }
+
+        public static bool profesionSeleccionada(int n)
+        {
+            if (n >= 0) return true;
+            else return false;
+        }
 
     }
 }

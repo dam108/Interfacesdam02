@@ -55,6 +55,9 @@
             this.eliminarBtn = new System.Windows.Forms.Button();
             this.engadirBtn = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.Button();
+            this.nombre_ListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.provincia_ListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.profesion_ListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -281,12 +284,17 @@
             // 
             // trabajadores_ListView
             // 
+            this.trabajadores_ListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.nombre_ListView,
+            this.provincia_ListView,
+            this.profesion_ListView});
             this.trabajadores_ListView.HideSelection = false;
             this.trabajadores_ListView.Location = new System.Drawing.Point(8, 31);
             this.trabajadores_ListView.Name = "trabajadores_ListView";
             this.trabajadores_ListView.Size = new System.Drawing.Size(588, 233);
             this.trabajadores_ListView.TabIndex = 0;
             this.trabajadores_ListView.UseCompatibleStateImageBehavior = false;
+            this.trabajadores_ListView.View = System.Windows.Forms.View.Details;
             // 
             // groupBox5
             // 
@@ -338,6 +346,21 @@
             this.exitBtn.TabIndex = 1;
             this.exitBtn.Text = "Pechar a aplicación";
             this.exitBtn.UseVisualStyleBackColor = true;
+            // 
+            // nombre_ListView
+            // 
+            this.nombre_ListView.Text = "Nome e apellidos";
+            this.nombre_ListView.Width = 238;
+            // 
+            // provincia_ListView
+            // 
+            this.provincia_ListView.Text = "Provincia";
+            this.provincia_ListView.Width = 160;
+            // 
+            // profesion_ListView
+            // 
+            this.profesion_ListView.Text = "Profesion";
+            this.profesion_ListView.Width = 184;
             // 
             // Formulario
             // 
@@ -403,6 +426,9 @@
         private System.Windows.Forms.ListView trabajadores_ListView;
         private System.Windows.Forms.TextBox detalleTrabajador_TextBox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ColumnHeader nombre_ListView;
+        private System.Windows.Forms.ColumnHeader provincia_ListView;
+        private System.Windows.Forms.ColumnHeader profesion_ListView;
     }
 }
 
