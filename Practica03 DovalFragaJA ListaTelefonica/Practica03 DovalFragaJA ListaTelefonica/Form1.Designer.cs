@@ -212,7 +212,7 @@
             this.MaximizeBox = false;
             this.Name = "Formulario";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "Practica 3 Doval Fraga Jose Angel";
+            this.Text = "7";
             ((System.ComponentModel.ISupportInitialize)(this.fotoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
