@@ -16,7 +16,7 @@ namespace Practica04_DovalFragaJA_ListView
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Formulario());
         }
     }
 }

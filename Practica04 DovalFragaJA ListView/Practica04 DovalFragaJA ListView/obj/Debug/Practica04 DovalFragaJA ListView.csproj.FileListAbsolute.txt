@@ -1,0 +1,10 @@
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 DovalFragaJA ListView\Practica04 DovalFragaJA ListView\bin\Debug\Practica04 DovalFragaJA ListView.exe.config
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 DovalFragaJA ListView\Practica04 DovalFragaJA ListView\bin\Debug\Practica04 DovalFragaJA ListView.exe
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 DovalFragaJA ListView\Practica04 DovalFragaJA ListView\bin\Debug\Practica04 DovalFragaJA ListView.pdb
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 DovalFragaJA ListView\Practica04 DovalFragaJA ListView\obj\Debug\Practica04 DovalFragaJA ListView.csprojAssemblyReference.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 DovalFragaJA ListView\Practica04 DovalFragaJA ListView\obj\Debug\Practica04_DovalFragaJA_ListView.Formulario.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 DovalFragaJA ListView\Practica04 DovalFragaJA ListView\obj\Debug\Practica04_DovalFragaJA_ListView.Properties.Resources.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 DovalFragaJA ListView\Practica04 DovalFragaJA ListView\obj\Debug\Practica04 DovalFragaJA ListView.csproj.GenerateResource.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 DovalFragaJA ListView\Practica04 DovalFragaJA ListView\obj\Debug\Practica04 DovalFragaJA ListView.csproj.CoreCompileInputs.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 DovalFragaJA ListView\Practica04 DovalFragaJA ListView\obj\Debug\Practica04 DovalFragaJA ListView.exe
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 DovalFragaJA ListView\Practica04 DovalFragaJA ListView\obj\Debug\Practica04 DovalFragaJA ListView.pdb
