@@ -32,7 +32,7 @@ namespace Practica04_DovalFragaJA_ListView
             // inicializamos listas
             provincias = new List<string>() { "A Coruña", "Lugo", "Ourense" };
             profesiones = new List<string>() { "Carpintero", "Albañil", "Contable", "Desarrollador" };
-            trabajadores = new List<Trabajador>() { new Trabajador("79336700V", "Jose Angel", "Doval", "Fraga", provincias[0], profesiones[3]) };
+            trabajadores = new List<Trabajador>() { new Trabajador("79336700v", "Jose Angel", "Doval", "Fraga", provincias[0], profesiones[3]) };
             ordenarlistas();
 
             // Binding de combobox y listBox

@@ -17,7 +17,7 @@ namespace Practica04_DovalFragaJA_ListView
 
         public Trabajador(string dni, string nombre, string apellido1, string apellido2, string provincia, string profesion)
         {
-            this.Dni = dni;
+            this.Dni = dni.ToLower();
             this.Nombre = nombre;
             this.Apellido1 = apellido1;
             this.Apellido2 = apellido2;

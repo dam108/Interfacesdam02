@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Practica04_DovalFragaJA_ListView
 {
@@ -20,7 +21,8 @@ namespace Practica04_DovalFragaJA_ListView
                 }
                 string letra = dni.Substring(8);
                 int numeros = Int32.Parse(strnumeros);
-                if (!char.IsLetter(letra[0]) | char.ToLower(letra[0]) != calcularLetraDni(numeros)) return false;
+                char letraMinuscula = Char.ToLower(letra[0]);
+                if (!Char.IsLetter(letraMinuscula) || letraMinuscula != calcularLetraDni(numeros)) return false;
                 else return true;
             }
             else return false;
