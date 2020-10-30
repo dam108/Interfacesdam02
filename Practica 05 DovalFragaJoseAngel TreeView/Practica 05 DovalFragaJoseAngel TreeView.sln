@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica 05 DovalFragaJoseAngel TreeView", "Practica 05 DovalFragaJoseAngel TreeView\Practica 05 DovalFragaJoseAngel TreeView.csproj", "{1517F6AA-D035-4C85-B237-19B182DE780C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1517F6AA-D035-4C85-B237-19B182DE780C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1517F6AA-D035-4C85-B237-19B182DE780C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1517F6AA-D035-4C85-B237-19B182DE780C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1517F6AA-D035-4C85-B237-19B182DE780C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20AFE067-5B9C-4804-BE13-2D7F85733D20}
+	EndGlobalSection
+EndGlobal

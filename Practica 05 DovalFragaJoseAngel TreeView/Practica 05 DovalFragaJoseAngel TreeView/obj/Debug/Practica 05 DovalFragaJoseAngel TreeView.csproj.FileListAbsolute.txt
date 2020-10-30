@@ -1,0 +1,10 @@
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica 05 DovalFragaJoseAngel TreeView\Practica 05 DovalFragaJoseAngel TreeView\bin\Debug\Practica 05 DovalFragaJoseAngel TreeView.exe.config
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica 05 DovalFragaJoseAngel TreeView\Practica 05 DovalFragaJoseAngel TreeView\bin\Debug\Practica 05 DovalFragaJoseAngel TreeView.exe
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica 05 DovalFragaJoseAngel TreeView\Practica 05 DovalFragaJoseAngel TreeView\bin\Debug\Practica 05 DovalFragaJoseAngel TreeView.pdb
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica 05 DovalFragaJoseAngel TreeView\Practica 05 DovalFragaJoseAngel TreeView\obj\Debug\Practica 05 DovalFragaJoseAngel TreeView.csprojAssemblyReference.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica 05 DovalFragaJoseAngel TreeView\Practica 05 DovalFragaJoseAngel TreeView\obj\Debug\Practica_05_DovalFragaJoseAngel_TreeView.Formulario.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica 05 DovalFragaJoseAngel TreeView\Practica 05 DovalFragaJoseAngel TreeView\obj\Debug\Practica_05_DovalFragaJoseAngel_TreeView.Properties.Resources.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica 05 DovalFragaJoseAngel TreeView\Practica 05 DovalFragaJoseAngel TreeView\obj\Debug\Practica 05 DovalFragaJoseAngel TreeView.csproj.GenerateResource.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica 05 DovalFragaJoseAngel TreeView\Practica 05 DovalFragaJoseAngel TreeView\obj\Debug\Practica 05 DovalFragaJoseAngel TreeView.csproj.CoreCompileInputs.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica 05 DovalFragaJoseAngel TreeView\Practica 05 DovalFragaJoseAngel TreeView\obj\Debug\Practica 05 DovalFragaJoseAngel TreeView.exe
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica 05 DovalFragaJoseAngel TreeView\Practica 05 DovalFragaJoseAngel TreeView\obj\Debug\Practica 05 DovalFragaJoseAngel TreeView.pdb

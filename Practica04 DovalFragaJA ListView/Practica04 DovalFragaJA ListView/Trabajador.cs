@@ -17,7 +17,7 @@ namespace Practica04_DovalFragaJA_ListView
 
         public Trabajador(string dni, string nombre, string apellido1, string apellido2, string provincia, string profesion)
         {
-            this.Dni = dni.ToLower();
+            this.Dni = dni;
             this.Nombre = nombre;
             this.Apellido1 = apellido1;
             this.Apellido2 = apellido2;
@@ -45,7 +45,7 @@ namespace Practica04_DovalFragaJA_ListView
         public override bool Equals(object obj)
         {
             return obj is Trabajador trabajador &&
-                   dni == trabajador.dni;
+                   dni.ToLower() == trabajador.dni.ToLower();
         }
 
         public override int GetHashCode()

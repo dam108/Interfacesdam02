@@ -49,8 +49,8 @@ namespace Practica04_DovalFragaJA_ListView
 
         }
 
-        private void trabajadores_ListView_DoubleClick(object sender, EventArgs e)
-        {
+        private void trabajadores_ListView_DoubleClick(object sender, EventArgs e) 
+        {   
             //MessageBox.Show("Has hecho doble click en una fila");
             int n = trabajadores_ListView.SelectedIndices[0];
             mostrarDetalleTrabajador(n);
@@ -59,7 +59,6 @@ namespace Practica04_DovalFragaJA_ListView
         private void eliminarTrabajadorBtn_Click(object sender, EventArgs e)
         {
             int n = trabajadores_ListView.SelectedIndices[0];
-
             if (n >= 0)
             {
                 AdvertenciaDown();
@@ -70,7 +69,6 @@ namespace Practica04_DovalFragaJA_ListView
             {
                 AdvertenciaUp("No hay trabajadores para borrar");
             }
-
         }
 
         private void anadirProvincia_Btn_Click(object sender, EventArgs e)
@@ -239,6 +237,7 @@ namespace Practica04_DovalFragaJA_ListView
                 item = trabajadores_ListView.Items.Add(trabajadores[i].Nombre + " " + trabajadores[i].Apellido1 + " " + trabajadores[i].Apellido2);
                 item.SubItems.Add(trabajadores[i].Provincia);
                 item.SubItems.Add(trabajadores[i].Profesion);
+
             }
         }
 
