@@ -142,7 +142,6 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
             int x = 0;
             localidades.ForEach(i =>
             {
-                //trabajadores_TreeView.Nodes[0].Nodes.Clear();
                 trabajadores_TreeView.Nodes[0].Nodes.Add("LOCALIDAD: " + i, "LOCALIDAD: " + i /*, id_imagen*/);
 
                 var lstJefes = trabajadores.Where(t => t.Localidad == i && t.Cargo == "JEFE").ToList();
@@ -170,46 +169,7 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
 
             trabajadores_TreeView.ExpandAll();
             trabajadores_TreeView.EndUpdate();
-
         }
-
-        //void PopulateTree(ref TreeNode root, List<Trabajador> trabajadoresList)
-        //{
-        //    if (root == null)
-        //    {
-        //        root = new TreeNode();
-        //        root.Text = "Cuadrilla";
-        //        root.Tag = null;
-        //        // get all departments in the list with parent is null
-        //        var details = trabajadoresList.Where(t => t.Localidad == null);
-        //        foreach (var detail in details)
-        //        {
-        //            var child = new TreeNode()
-        //            {
-        //                Text = detail.Localidad,
-        //                Tag = detail.Localidad,
-        //            };
-        //            PopulateTree(ref child, trabajadoresList);
-        //            root.Nodes.Add(child);
-        //        }
-        //    }
-        //    else
-        //    {
-        //        var id = (string)root.Tag;
-        //        var details = trabajadoresList.Where(t => t.Cargo == id);
-        //        foreach (var detail in details)
-        //        {
-        //            var child = new TreeNode()
-        //            {
-        //                Text = detail.Nombre,
-        //                Tag = detail.Cargo,
-        //            };
-        //            PopulateTree(ref child, trabajadoresList);
-        //            root.Nodes.Add(child);
-        //        }
-        //    }
-        //}
-
     }
 }
 // tenemos 
@@ -271,3 +231,42 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
  * 
  * 
  */
+
+// funcion a tener en cuenta , pasa lista a treeView de manera recursiva
+
+//void PopulateTree(ref TreeNode root, List<Trabajador> trabajadoresList)
+//{
+//    if (root == null)
+//    {
+//        root = new TreeNode();
+//        root.Text = "Cuadrilla";
+//        root.Tag = null;
+//        // get all departments in the list with parent is null
+//        var details = trabajadoresList.Where(t => t.Localidad == null);
+//        foreach (var detail in details)
+//        {
+//            var child = new TreeNode()
+//            {
+//                Text = detail.Localidad,
+//                Tag = detail.Localidad,
+//            };
+//            PopulateTree(ref child, trabajadoresList);
+//            root.Nodes.Add(child);
+//        }
+//    }
+//    else
+//    {
+//        var id = (string)root.Tag;
+//        var details = trabajadoresList.Where(t => t.Cargo == id);
+//        foreach (var detail in details)
+//        {
+//            var child = new TreeNode()
+//            {
+//                Text = detail.Nombre,
+//                Tag = detail.Cargo,
+//            };
+//            PopulateTree(ref child, trabajadoresList);
+//            root.Nodes.Add(child);
+//        }
+//    }
+//}
