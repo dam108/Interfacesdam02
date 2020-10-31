@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("ferrol");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("cuadrillas", new System.Windows.Forms.TreeNode[] {
-            treeNode1});
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("ferrol");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("cuadrillas", new System.Windows.Forms.TreeNode[] {
+            treeNode5});
             this.trabajadores_TreeView = new System.Windows.Forms.TreeView();
             this.label1 = new System.Windows.Forms.Label();
             this.localidad_TextBox = new System.Windows.Forms.TextBox();
@@ -48,7 +48,6 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.advertencia_Lbl = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,12 +56,12 @@
             this.trabajadores_TreeView.Location = new System.Drawing.Point(20, 21);
             this.trabajadores_TreeView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.trabajadores_TreeView.Name = "trabajadores_TreeView";
-            treeNode1.Name = "FerrolNode";
-            treeNode1.Text = "ferrol";
-            treeNode2.Name = "cuadrillasNode";
-            treeNode2.Text = "cuadrillas";
+            treeNode5.Name = "FerrolNode";
+            treeNode5.Text = "ferrol";
+            treeNode6.Name = "cuadrillasNode";
+            treeNode6.Text = "cuadrillas";
             this.trabajadores_TreeView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode2});
+            treeNode6});
             this.trabajadores_TreeView.Size = new System.Drawing.Size(547, 487);
             this.trabajadores_TreeView.TabIndex = 0;
             // 
@@ -73,7 +72,7 @@
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 21);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Localidad";
             // 
             // localidad_TextBox
@@ -81,14 +80,14 @@
             this.localidad_TextBox.Location = new System.Drawing.Point(685, 34);
             this.localidad_TextBox.Name = "localidad_TextBox";
             this.localidad_TextBox.Size = new System.Drawing.Size(196, 29);
-            this.localidad_TextBox.TabIndex = 2;
+            this.localidad_TextBox.TabIndex = 1;
             // 
             // altaLocalidad_Btn
             // 
             this.altaLocalidad_Btn.Location = new System.Drawing.Point(902, 31);
             this.altaLocalidad_Btn.Name = "altaLocalidad_Btn";
             this.altaLocalidad_Btn.Size = new System.Drawing.Size(245, 29);
-            this.altaLocalidad_Btn.TabIndex = 3;
+            this.altaLocalidad_Btn.TabIndex = 2;
             this.altaLocalidad_Btn.Text = "Alta Localidad";
             this.altaLocalidad_Btn.UseVisualStyleBackColor = true;
             this.altaLocalidad_Btn.Click += new System.EventHandler(this.altaLocalidad_Btn_Click);
@@ -103,7 +102,7 @@
             this.groupBox1.Location = new System.Drawing.Point(606, 82);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(541, 128);
-            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nuevo empleado";
             // 
@@ -112,7 +111,7 @@
             this.apellido_TextBox.Location = new System.Drawing.Point(94, 73);
             this.apellido_TextBox.Name = "apellido_TextBox";
             this.apellido_TextBox.Size = new System.Drawing.Size(321, 29);
-            this.apellido_TextBox.TabIndex = 2;
+            this.apellido_TextBox.TabIndex = 3;
             // 
             // nombre_TextBox
             // 
@@ -126,7 +125,7 @@
             this.nuevoEmpleado_Btn.Location = new System.Drawing.Point(421, 31);
             this.nuevoEmpleado_Btn.Name = "nuevoEmpleado_Btn";
             this.nuevoEmpleado_Btn.Size = new System.Drawing.Size(111, 29);
-            this.nuevoEmpleado_Btn.TabIndex = 3;
+            this.nuevoEmpleado_Btn.TabIndex = 4;
             this.nuevoEmpleado_Btn.Text = "Alta";
             this.nuevoEmpleado_Btn.UseVisualStyleBackColor = true;
             this.nuevoEmpleado_Btn.Click += new System.EventHandler(this.nuevoEmpleado_Btn_Click);
@@ -138,7 +137,7 @@
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 21);
-            this.label3.TabIndex = 1;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Apellido";
             // 
             // label2
@@ -148,7 +147,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 21);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Nombre";
             // 
             // label4
@@ -167,14 +166,14 @@
             this.localidades_comboBox.Location = new System.Drawing.Point(700, 234);
             this.localidades_comboBox.Name = "localidades_comboBox";
             this.localidades_comboBox.Size = new System.Drawing.Size(265, 29);
-            this.localidades_comboBox.TabIndex = 5;
+            this.localidades_comboBox.TabIndex = 4;
             // 
             // trabajadores_Btn
             // 
             this.trabajadores_Btn.Location = new System.Drawing.Point(971, 237);
             this.trabajadores_Btn.Name = "trabajadores_Btn";
             this.trabajadores_Btn.Size = new System.Drawing.Size(176, 29);
-            this.trabajadores_Btn.TabIndex = 3;
+            this.trabajadores_Btn.TabIndex = 5;
             this.trabajadores_Btn.Text = "Trabajadores";
             this.trabajadores_Btn.UseVisualStyleBackColor = true;
             this.trabajadores_Btn.Click += new System.EventHandler(this.trabajadores_Btn_Click);
@@ -189,7 +188,7 @@
             this.trabajadores_ListView.Location = new System.Drawing.Point(606, 284);
             this.trabajadores_ListView.Name = "trabajadores_ListView";
             this.trabajadores_ListView.Size = new System.Drawing.Size(541, 224);
-            this.trabajadores_ListView.TabIndex = 6;
+            this.trabajadores_ListView.TabIndex = 0;
             this.trabajadores_ListView.UseCompatibleStateImageBehavior = false;
             this.trabajadores_ListView.View = System.Windows.Forms.View.Details;
             // 
@@ -208,21 +207,11 @@
             this.columnHeader3.Text = "Cargo";
             this.columnHeader3.Width = 144;
             // 
-            // advertencia_Lbl
-            // 
-            this.advertencia_Lbl.Location = new System.Drawing.Point(20, 517);
-            this.advertencia_Lbl.Name = "advertencia_Lbl";
-            this.advertencia_Lbl.Size = new System.Drawing.Size(1127, 27);
-            this.advertencia_Lbl.TabIndex = 7;
-            this.advertencia_Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.advertencia_Lbl.Visible = false;
-            // 
             // Formulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1170, 557);
-            this.Controls.Add(this.advertencia_Lbl);
+            this.ClientSize = new System.Drawing.Size(1170, 529);
             this.Controls.Add(this.trabajadores_ListView);
             this.Controls.Add(this.localidades_comboBox);
             this.Controls.Add(this.groupBox1);
@@ -260,7 +249,6 @@
         private System.Windows.Forms.ComboBox localidades_comboBox;
         private System.Windows.Forms.Button trabajadores_Btn;
         private System.Windows.Forms.ListView trabajadores_ListView;
-        private System.Windows.Forms.Label advertencia_Lbl;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;

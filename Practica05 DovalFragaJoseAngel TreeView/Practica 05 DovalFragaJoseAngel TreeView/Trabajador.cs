@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Practica_05_DovalFragaJoseAngel_TreeView
+﻿namespace Practica_05_DovalFragaJoseAngel_TreeView
 {
     class Trabajador
     {
@@ -14,7 +7,6 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
         public string Localidad { get; set; }
         public string Cargo { get; set; }
         public int Id_padre {get; set;}
-        
 
         public Trabajador(string nombre, string apellido, string localidad, string cargo, int ip)
         {
@@ -25,16 +17,9 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
             Id_padre = ip;
         }
 
-        public Trabajador(string nombre, string apellido)
+        public override string ToString()
         {
-            Nombre = nombre;
-            Apellido = apellido;
+            return Nombre + ", " + Apellido + ", " + Localidad + ", " + Cargo + ", " + Id_padre.ToString();
         }
-
-        public Trabajador(string localidad)
-        {
-            Localidad = localidad;
-        }
-
     }
 }

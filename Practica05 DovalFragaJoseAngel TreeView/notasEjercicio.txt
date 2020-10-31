@@ -1,0 +1,104 @@
+// tenemos 
+/*
+ * TreeNodes:
+ * Treenode Cuadrillas --> 0 Cuadrillas
+ *      Treenode Localidades --> 0 Localidad_1
+ *                  Treenode Cargos: Jefe --> 0 Jefe_1
+ *                              Treenode Cargos: Oficial_1 --> 0 Oficial1_1
+ *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
+
+ *                              Treenode Cargos: Oficial_1 --> 1 Oficial1_2
+ *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
+ *                                          Treenode Cargos: Oficial_2 --> 1 Oficial2_2
+
+ *                              Treenode Cargos: Oficial_1 --> 2 Oficial1_3
+ *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
+ *      Treenode Localidades --> 1 Localidad_2
+ *                  Treenode Cargos: Jefe --> 1 Jefe_2
+ *                              Treenode Cargos: Oficial_1 --> 0 Oficial1_1
+ *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
+ *                              Treenode Cargos: Oficial_1 --> 1 Oficial1_2
+ *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
+ *                                          Treenode Cargos: Oficial_2 --> 1 Oficial2_2
+ *                              Treenode Cargos: Oficial_1 --> 2 Oficial1_3
+ *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
+ *      Treenode Localidades --> 2 Localidad_3
+ *                  Treenode Cargos: Jefe --> 2 Jefe_3
+ *                              Treenode Cargos: Oficial_1 --> 0 Oficial1_1
+ *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
+ *                              Treenode Cargos: Oficial_1 --> 1 Oficial1_2
+ *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
+ *                                          Treenode Cargos: Oficial_2 --> 1 Oficial2_2
+ *                                          Treenode Cargos: Oficial_2 --> 2 Oficial2_3
+ *                              Treenode Cargos: Oficial_1 --> 2 Oficial1_3
+ *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
+ *      Treenode Localidades --> 3 Localidad_4
+ *                  Treenode Cargos: Jefe --> 3 Jefe_4
+ *                              Treenode Cargos: Oficial_1 --> 0 Oficial1_1
+ *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
+ *                              Treenode Cargos: Oficial_1 --> 1 Oficial1_2
+ *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
+ *                                          Treenode Cargos: Oficial_2 --> 1 Oficial2_2
+ *                              Treenode Cargos: Oficial_1 --> 2 Oficial1_3
+ *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
+ *      
+ * 
+ * Listas
+ * 
+ * Lista Localidades --> contiene lista Jefes
+ * lista de trabajadores --> Contien objetos con los datos de cada trabajador
+ * 
+ * Clases
+ * 
+ * Trabajador --> objeto que contiene nombre , apellidos, Localidad, cargo, id_padre
+ * 
+ * Rellenar TreeNode --> tengo una funcion con lamdas donde recogo los datos de la listas y relleno el treeView,
+ * con esta funcion no da igual el tamaño de las listas, los unico problema seria si se añaden mas cargos
+ * 
+ * 
+ */
+
+// funcion a tener en cuenta , pasa lista a treeView de manera recursiva
+
+//void PopulateTree(ref TreeNode root, List<Trabajador> trabajadoresList)
+//{
+//    if (root == null)
+//    {
+//        root = new TreeNode();
+//        root.Text = "Cuadrilla";
+//        root.Tag = null;
+//        // get all departments in the list with parent is null
+//        var details = trabajadoresList.Where(t => t.Localidad == null);
+//        foreach (var detail in details)
+//        {
+//            var child = new TreeNode()
+//            {
+//                Text = detail.Localidad,
+//                Tag = detail.Localidad,
+//            };
+//            PopulateTree(ref child, trabajadoresList);
+//            root.Nodes.Add(child);
+//        }
+//    }
+//    else
+//    {
+//        var id = (string)root.Tag;
+//        var details = trabajadoresList.Where(t => t.Cargo == id);
+//        foreach (var detail in details)
+//        {
+//            var child = new TreeNode()
+//            {
+//                Text = detail.Nombre,
+//                Tag = detail.Cargo,
+//            };
+//            PopulateTree(ref child, trabajadoresList);
+//            root.Nodes.Add(child);
+//        }
+//    }
+//}
+
+//MessageBox.Show(nodoSeleccionado.Parent.Name.ToString()); Sacamos el nodo del padre ( de aqui ya podemos sacar su id, su nombre etc)
+//MessageBox.Show(nodoSeleccionado.NextNode.Text); sacamos el nodo del siguiente nodo hermano
+//MessageBox.Show(nodoSeleccionado.Level.ToString()); sacamos la profundidad de nodo seleccionado --> 0 cuadrillas, 1 localidades, 2 jefes, 3 primer oficial, 4 segundo oficial
+//MessageBox.Show(nodoSeleccionado.Index.ToString()); Sacamos el indice del nodo seleccionado
+// MessageBox.Show(nodoSeleccionado.FullPath); sacamos toda la ruta desde la raiz hasta este nodo ejemplo CUADRILLAS/lOCALIDAD: SADA/JEFE: JOSE DOVAL/1º OFICIAL: XIAN PEREZ

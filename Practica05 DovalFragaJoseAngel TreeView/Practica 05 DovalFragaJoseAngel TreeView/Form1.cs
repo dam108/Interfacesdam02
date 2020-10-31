@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Reflection;
-using System.Runtime.Remoting.Contexts;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Practica_05_DovalFragaJoseAngel_TreeView
@@ -16,11 +10,11 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
     public partial class Formulario : Form
     {
         // variables globales
-        List<Trabajador> trabajadores;
+        private List<Trabajador> trabajadores;
         private List<string> localidades;
         BindingSource listaLocalidadesBS;
         ListViewItem item;
-
+        ImageList iconos;
 
         public Formulario()
         {
@@ -30,28 +24,24 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
         //
         // Eventos
         //
-
         private void Formulario_Load(object sender, EventArgs e)
         {
-
             // creamos un par de localidades
             localidades = new List<string>();
-            localidades.Add("FERROL"); //0
-            localidades.Add("BETANZOS"); //1
-            localidades.Add("SADA"); //2
-            localidades.Add("CORUÑA"); //3
+            localidades.Add("FERROL");
+            localidades.Add("BETANZOS");
+            localidades.Add("SADA");
+            localidades.Add("CORUÑA");
 
             // creamos un par de trabajadores 
             trabajadores = new List<Trabajador>();
             trabajadores.Add(new Trabajador("JOSE","DOVAL", "BETANZOS", "JEFE", 1));
-            trabajadores.Add(new Trabajador("DANIEL", "DI PASCUA", "SADA", "JEFE", 2));
-            trabajadores.Add(new Trabajador("XIAN", "PEREZ", "FERROL", "JEFE", 0));
-            trabajadores.Add(new Trabajador("PEDRO", "SANCHEZ", "BETANZOS", "1º OFICIAL", 0));
-            trabajadores.Add(new Trabajador("CRISTIAN", "CASTRO", "SADA", "1º OFICIAL", 0));
-            trabajadores.Add(new Trabajador("MARIANO", "RAJOY", "BETANZOS", "2º OFICIAL", 0));
-            trabajadores.Add(new Trabajador("PABLO", "IGLESIAS", "CORUÑA", "JEFE", 3));
-
-            
+            trabajadores.Add(new Trabajador("MANUEL", "ORTEGA", "SADA", "JEFE", 2));
+            trabajadores.Add(new Trabajador("DIEGO", "PEREZ", "FERROL", "JEFE", 0));
+            trabajadores.Add(new Trabajador("JUAN", "SANCHEZ", "BETANZOS", "1º OFICIAL", 0));
+            trabajadores.Add(new Trabajador("MIGUEL", "CASTRO", "SADA", "1º OFICIAL", 0));
+            trabajadores.Add(new Trabajador("JESUS", "IGLESIAS", "BETANZOS", "2º OFICIAL", 0));
+            trabajadores.Add(new Trabajador("PABLO", "SILVA", "CORUÑA", "JEFE", 3));
 
             //Binding de localidades
             listaLocalidadesBS = new BindingSource();
@@ -61,9 +51,18 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
             // ListView
             item = new ListViewItem();
 
-            // TreeView
-            CrearTreeView();
 
+            // Imagenes treeView
+            iconos = new ImageList();
+            iconos.Images.Add(Image.FromFile(@"../../../icons/archivo.png"));
+            iconos.Images.Add(Image.FromFile(@"../../../icons/carpetaAbierta.png"));
+            iconos.Images.Add(Image.FromFile(@"../../../icons/carpetaCerrada.png"));
+            iconos.Images.Add(Image.FromFile(@"../../../icons/archivoAbierto.png"));
+            trabajadores_TreeView.ImageList = iconos;
+            trabajadores_TreeView.SelectedImageIndex = 2;
+
+            // cargamos el treeView
+            CrearTreeView();
         }
 
         private void trabajadores_Btn_Click(object sender, EventArgs e)
@@ -83,7 +82,7 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
             }
             else
             {
-                MessageBox.Show("Esta Localidad ya existe");
+                MessageBox.Show("Esta Localidad ya existe", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
                 localidad_TextBox.Clear();
                 localidad_TextBox.Focus();
             }
@@ -92,22 +91,93 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
 
         private void nuevoEmpleado_Btn_Click(object sender, EventArgs e)
         {
-            // recoger valores nombre, apellido, localidad seleccionada desde el tree y cargo seleccionado desde el tree, de momento la parte del tree esta sin hacer
+            string localidad;
+            string cargo;
+            int id_padre;
+            string nombre = nombre_TextBox.Text.ToUpper();
+            string apellido = apellido_TextBox.Text.ToUpper();
 
-            trabajadores.Add(new Trabajador(nombre_TextBox.Text, apellido_TextBox.Text));
-            limpiarCampos(); 
+            var lstNombres = trabajadores.Where(t => t.Nombre == nombre && t.Apellido == apellido).ToList();
+
+            if (lstNombres.Count > 0) // comprobamos si el nombre y el apellido ya existe
+            {
+                MessageBox.Show("Este Trabajador ya existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                limpiarCampos();
+                nombre_TextBox.Focus();
+            }
+            else if (nombre == "")
+            {
+                MessageBox.Show("Te falta el nombre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                nombre_TextBox.Focus();
+            }
+            else if (apellido == "")
+            {
+                MessageBox.Show("Te falta el apellido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                apellido_TextBox.Focus();
+            }
+            else if (trabajadores_TreeView.SelectedNode == null || trabajadores_TreeView.SelectedNode.Level == 0)
+            {
+                MessageBox.Show("Tienes que seleccionar un nodo a partir de localidades", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (trabajadores_TreeView.SelectedNode.Level == 1)  // si el elemento seleccionado es Localidad
+                {
+                    if (ComprobarNodoTieneHijos(trabajadores_TreeView.SelectedNode)) // comprobamos que no tenga hijos
+                    {
+                        MessageBox.Show("Ya hay un jefe es esta localidad, no se pueden crear mas jefes", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else 
+                    {
+                        // crear aqui al jefe
+                        localidad = trabajadores_TreeView.SelectedNode.Name.Substring(11);
+                        cargo = "JEFE";
+                        id_padre = trabajadores_TreeView.SelectedNode.Parent.Index;
+                        trabajadores.Add(new Trabajador(nombre, apellido, localidad, cargo, id_padre));
+                        actualizarVinculos();
+                    }
+                }
+                else if (trabajadores_TreeView.SelectedNode.Level == 2) // si el elemento seleccionado es Jefe
+                {
+                    // crear aqui al primer oficial
+                    localidad = trabajadores_TreeView.SelectedNode.Parent.Name.Substring(11);
+                    cargo = "1º OFICIAL";
+                    id_padre = trabajadores_TreeView.SelectedNode.Parent.Index;
+                    trabajadores.Add(new Trabajador(nombre, apellido, localidad, cargo, id_padre));
+                    actualizarVinculos();
+                }
+                else if (trabajadores_TreeView.SelectedNode.Level == 3) // si el elemento seleccionado es 1º oficial
+                {
+                    // crear aqui al segundo oficial
+                    localidad = trabajadores_TreeView.SelectedNode.Parent.Parent.Name.Substring(11);
+                    cargo = "2º OFICIAL";
+                    id_padre = trabajadores_TreeView.SelectedNode.Parent.Index;
+                    trabajadores.Add(new Trabajador(nombre, apellido, localidad, cargo, id_padre));
+                    actualizarVinculos();
+                }
+                else 
+                {
+                    MessageBox.Show("No se puede crear un un trabajador por debajo de la carpeta 2º OFICIAL, porfavor selecciona otra carpeta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         //
         // Metodos
         //
+        private bool ComprobarNodoTieneHijos(TreeNode nodo)
+        {
+            if (nodo.Nodes.Count > 0) return true;
+
+            return false;
+        }
 
         private void ActualizarListView(string txt)
         {
             trabajadores_ListView.Items.Clear();
             for (int i = 0; i < trabajadores.Count; i++)
             {
-                if(trabajadores[i].Localidad == txt)
+                if (trabajadores[i].Localidad == txt)
                 item = trabajadores_ListView.Items.Add(trabajadores[i].Nombre);
                 item.SubItems.Add(trabajadores[i].Apellido);
                 item.SubItems.Add(trabajadores[i].Cargo);
@@ -118,9 +188,6 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
         {
             listaLocalidadesBS.ResetBindings(false);
             CrearTreeView();
-
-
-
         }
 
         private void limpiarCampos()
@@ -128,7 +195,6 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
             localidad_TextBox.Clear();
             nombre_TextBox.Clear();
             apellido_TextBox.Clear();
-            trabajadores_TreeView.Nodes.Clear();
         }
 
         private void CrearTreeView()
@@ -138,27 +204,27 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
             trabajadores_TreeView.BeginUpdate();
 
             // creamos el nodo Principal
-            trabajadores_TreeView.Nodes.Add("CUADRILLAS", "CUADRILLAS");
+            trabajadores_TreeView.Nodes.Add("CUADRILLAS", "CUADRILLAS", 1);
             int x = 0;
             localidades.ForEach(i =>
             {
-                trabajadores_TreeView.Nodes[0].Nodes.Add("LOCALIDAD: " + i, "LOCALIDAD: " + i /*, id_imagen*/);
+                trabajadores_TreeView.Nodes[0].Nodes.Add("LOCALIDAD: " + i, "LOCALIDAD: " + i, 1);
 
                 var lstJefes = trabajadores.Where(t => t.Localidad == i && t.Cargo == "JEFE").ToList();
 
                 lstJefes.ForEach(s =>
                 {
                     int j = 0;
-                    trabajadores_TreeView.Nodes[0].Nodes[x].Nodes.Add("JEFE: " + s.Nombre + " " + s.Apellido, "JEFE: " + s.Nombre + " " + s.Apellido /*, id_imagen*/ );
+                    trabajadores_TreeView.Nodes[0].Nodes[x].Nodes.Add("JEFE: " + s.Nombre + " " + s.Apellido, "JEFE: " + s.Nombre + " " + s.Apellido, 1 );
 
                     var lstOficial_1 = trabajadores.Where(t => t.Localidad == i && t.Cargo == "1º OFICIAL").ToList();
                     lstOficial_1.ForEach(h =>
                     {
-                        trabajadores_TreeView.Nodes[0].Nodes[x].Nodes[j].Nodes.Add("1º OFICIAL: " + h.Nombre + " " + h.Apellido, "1º OFICIAL: " + h.Nombre + " " + h.Apellido);
+                        trabajadores_TreeView.Nodes[0].Nodes[x].Nodes[j].Nodes.Add("1º OFICIAL: " + h.Nombre + " " + h.Apellido, "1º OFICIAL: " + h.Nombre + " " + h.Apellido, 1);
                         int xj = 0;
                         var lstOficial_2 = trabajadores.Where(t => t.Localidad == i && t.Cargo == "2º OFICIAL").ToList();
                         lstOficial_2.ForEach(sh => {
-                            trabajadores_TreeView.Nodes[0].Nodes[x].Nodes[j].Nodes[xj].Nodes.Add("2º OFICIAL: " + sh.Nombre + " " + sh.Apellido, "2º OFICIAL: " + sh.Nombre + " " + sh.Apellido);
+                            trabajadores_TreeView.Nodes[0].Nodes[x].Nodes[j].Nodes[xj].Nodes.Add("2º OFICIAL: " + sh.Nombre + " " + sh.Apellido, "2º OFICIAL: " + sh.Nombre + " " + sh.Apellido, 0, 3);
                         });
                         xj++;
                     });
@@ -172,101 +238,3 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
         }
     }
 }
-// tenemos 
-/*
- * TreeNodes:
- * Treenode Cuadrillas --> 0 Cuadrillas
- *      Treenode Localidades --> 0 Localidad_1
- *                  Treenode Cargos: Jefe --> 0 Jefe_1
- *                              Treenode Cargos: Oficial_1 --> 0 Oficial1_1
- *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
-
- *                              Treenode Cargos: Oficial_1 --> 1 Oficial1_2
- *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
- *                                          Treenode Cargos: Oficial_2 --> 1 Oficial2_2
-
- *                              Treenode Cargos: Oficial_1 --> 2 Oficial1_3
- *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
- *      Treenode Localidades --> 1 Localidad_2
- *                  Treenode Cargos: Jefe --> 1 Jefe_2
- *                              Treenode Cargos: Oficial_1 --> 0 Oficial1_1
- *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
- *                              Treenode Cargos: Oficial_1 --> 1 Oficial1_2
- *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
- *                                          Treenode Cargos: Oficial_2 --> 1 Oficial2_2
- *                              Treenode Cargos: Oficial_1 --> 2 Oficial1_3
- *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
- *      Treenode Localidades --> 2 Localidad_3
- *                  Treenode Cargos: Jefe --> 2 Jefe_3
- *                              Treenode Cargos: Oficial_1 --> 0 Oficial1_1
- *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
- *                              Treenode Cargos: Oficial_1 --> 1 Oficial1_2
- *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
- *                                          Treenode Cargos: Oficial_2 --> 1 Oficial2_2
- *                                          Treenode Cargos: Oficial_2 --> 2 Oficial2_3
- *                              Treenode Cargos: Oficial_1 --> 2 Oficial1_3
- *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
- *      Treenode Localidades --> 3 Localidad_4
- *                  Treenode Cargos: Jefe --> 3 Jefe_4
- *                              Treenode Cargos: Oficial_1 --> 0 Oficial1_1
- *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
- *                              Treenode Cargos: Oficial_1 --> 1 Oficial1_2
- *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
- *                                          Treenode Cargos: Oficial_2 --> 1 Oficial2_2
- *                              Treenode Cargos: Oficial_1 --> 2 Oficial1_3
- *                                          Treenode Cargos: Oficial_2 --> 0 Oficial2_1
- *      
- * 
- * Listas
- * 
- * Lista Localidades --> contiene lista Jefes
- * lista de trabajadores --> Contien objetos con los datos de cada trabajador
- * 
- * Clases
- * 
- * Trabajador --> objeto que contiene nombre , apellidos, Localidad, cargo, id_padre
- * 
- * Rellenar TreeNode --> tengo una funcion con lamdas donde recogo los datos de la listas y relleno el treeView,
- * con esta funcion no da igual el tamaño de las listas, los unico problema seria si se añaden mas cargos
- * 
- * 
- */
-
-// funcion a tener en cuenta , pasa lista a treeView de manera recursiva
-
-//void PopulateTree(ref TreeNode root, List<Trabajador> trabajadoresList)
-//{
-//    if (root == null)
-//    {
-//        root = new TreeNode();
-//        root.Text = "Cuadrilla";
-//        root.Tag = null;
-//        // get all departments in the list with parent is null
-//        var details = trabajadoresList.Where(t => t.Localidad == null);
-//        foreach (var detail in details)
-//        {
-//            var child = new TreeNode()
-//            {
-//                Text = detail.Localidad,
-//                Tag = detail.Localidad,
-//            };
-//            PopulateTree(ref child, trabajadoresList);
-//            root.Nodes.Add(child);
-//        }
-//    }
-//    else
-//    {
-//        var id = (string)root.Tag;
-//        var details = trabajadoresList.Where(t => t.Cargo == id);
-//        foreach (var detail in details)
-//        {
-//            var child = new TreeNode()
-//            {
-//                Text = detail.Nombre,
-//                Tag = detail.Cargo,
-//            };
-//            PopulateTree(ref child, trabajadoresList);
-//            root.Nodes.Add(child);
-//        }
-//    }
-//}
