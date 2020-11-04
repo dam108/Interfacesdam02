@@ -1,0 +1,10 @@
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 Extra DovalFragaJA Layouts\Practica04 Extra DovalFragaJA Layouts\bin\Debug\Practica04 DovalFragaJA ListView.exe.config
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 Extra DovalFragaJA Layouts\Practica04 Extra DovalFragaJA Layouts\bin\Debug\Practica04 DovalFragaJA ListView.exe
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 Extra DovalFragaJA Layouts\Practica04 Extra DovalFragaJA Layouts\bin\Debug\Practica04 DovalFragaJA ListView.pdb
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 Extra DovalFragaJA Layouts\Practica04 Extra DovalFragaJA Layouts\obj\Debug\Practica04 Extra DovalFragaJA Layouts.csprojAssemblyReference.cache
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 Extra DovalFragaJA Layouts\Practica04 Extra DovalFragaJA Layouts\obj\Debug\Practica04_Extra_DovalFragaJA_Layouts.Formulario.resources
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 Extra DovalFragaJA Layouts\Practica04 Extra DovalFragaJA Layouts\obj\Debug\Practica04_Extra_DovalFragaJA_Layouts.Properties.Resources.resources
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 Extra DovalFragaJA Layouts\Practica04 Extra DovalFragaJA Layouts\obj\Debug\Practica04 Extra DovalFragaJA Layouts.csproj.GenerateResource.cache
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 Extra DovalFragaJA Layouts\Practica04 Extra DovalFragaJA Layouts\obj\Debug\Practica04 Extra DovalFragaJA Layouts.csproj.CoreCompileInputs.cache
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 Extra DovalFragaJA Layouts\Practica04 Extra DovalFragaJA Layouts\obj\Debug\Practica04 DovalFragaJA ListView.exe
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica04 Extra DovalFragaJA Layouts\Practica04 Extra DovalFragaJA Layouts\obj\Debug\Practica04 DovalFragaJA ListView.pdb
