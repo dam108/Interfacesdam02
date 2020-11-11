@@ -63,6 +63,7 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
 
             // cargamos el treeView
             CrearTreeView();
+
         }
 
         private void trabajadores_Btn_Click(object sender, EventArgs e)
@@ -232,6 +233,8 @@ namespace Practica_05_DovalFragaJoseAngel_TreeView
                 });
                 x++;
             });
+
+
 
             trabajadores_TreeView.ExpandAll();
             trabajadores_TreeView.EndUpdate();

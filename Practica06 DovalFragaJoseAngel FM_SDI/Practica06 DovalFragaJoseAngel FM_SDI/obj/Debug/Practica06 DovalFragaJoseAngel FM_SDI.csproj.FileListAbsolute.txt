@@ -1,0 +1,13 @@
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica06 DovalFragaJoseAngel FM_SDI\Practica06 DovalFragaJoseAngel FM_SDI\bin\Debug\Practica06 DovalFragaJoseAngel FM_SDI.exe.config
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica06 DovalFragaJoseAngel FM_SDI\Practica06 DovalFragaJoseAngel FM_SDI\bin\Debug\Practica06 DovalFragaJoseAngel FM_SDI.exe
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica06 DovalFragaJoseAngel FM_SDI\Practica06 DovalFragaJoseAngel FM_SDI\bin\Debug\Practica06 DovalFragaJoseAngel FM_SDI.pdb
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica06 DovalFragaJoseAngel FM_SDI\Practica06 DovalFragaJoseAngel FM_SDI\obj\Debug\Practica06 DovalFragaJoseAngel FM_SDI.csprojAssemblyReference.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica06 DovalFragaJoseAngel FM_SDI\Practica06 DovalFragaJoseAngel FM_SDI\obj\Debug\Practica06_DovalFragaJoseAngel_FM_SDI.Form1.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica06 DovalFragaJoseAngel FM_SDI\Practica06 DovalFragaJoseAngel FM_SDI\obj\Debug\Practica06_DovalFragaJoseAngel_FM_SDI.HijaA.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica06 DovalFragaJoseAngel FM_SDI\Practica06 DovalFragaJoseAngel FM_SDI\obj\Debug\Practica06_DovalFragaJoseAngel_FM_SDI.HijaB.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica06 DovalFragaJoseAngel FM_SDI\Practica06 DovalFragaJoseAngel FM_SDI\obj\Debug\Practica06_DovalFragaJoseAngel_FM_SDI.HijaC.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica06 DovalFragaJoseAngel FM_SDI\Practica06 DovalFragaJoseAngel FM_SDI\obj\Debug\Practica06_DovalFragaJoseAngel_FM_SDI.Properties.Resources.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica06 DovalFragaJoseAngel FM_SDI\Practica06 DovalFragaJoseAngel FM_SDI\obj\Debug\Practica06 DovalFragaJoseAngel FM_SDI.csproj.GenerateResource.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica06 DovalFragaJoseAngel FM_SDI\Practica06 DovalFragaJoseAngel FM_SDI\obj\Debug\Practica06 DovalFragaJoseAngel FM_SDI.csproj.CoreCompileInputs.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica06 DovalFragaJoseAngel FM_SDI\Practica06 DovalFragaJoseAngel FM_SDI\obj\Debug\Practica06 DovalFragaJoseAngel FM_SDI.exe
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica06 DovalFragaJoseAngel FM_SDI\Practica06 DovalFragaJoseAngel FM_SDI\obj\Debug\Practica06 DovalFragaJoseAngel FM_SDI.pdb
