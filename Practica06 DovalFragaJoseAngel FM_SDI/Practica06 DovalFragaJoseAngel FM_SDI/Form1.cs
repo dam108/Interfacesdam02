@@ -24,7 +24,7 @@ namespace Practica06_DovalFragaJoseAngel_FM_SDI
 
         private void hijaA_btn_Click(object sender, EventArgs e)
         {
-            int n =consguirPosicionHija(1);
+            int n = consguirPosicionHija(1);
             ventanas.Add(new HijaA((n + 1)));
             ventanas[contarTodas() - 1].Show();
             ActualizarContadorTotal();

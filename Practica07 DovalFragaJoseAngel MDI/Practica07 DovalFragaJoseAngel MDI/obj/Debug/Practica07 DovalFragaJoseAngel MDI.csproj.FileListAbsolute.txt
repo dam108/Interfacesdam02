@@ -1,0 +1,12 @@
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\bin\Debug\Practica07 DovalFragaJoseAngel MDI.exe.config
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\bin\Debug\Practica07 DovalFragaJoseAngel MDI.exe
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\bin\Debug\Practica07 DovalFragaJoseAngel MDI.pdb
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07 DovalFragaJoseAngel MDI.csprojAssemblyReference.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.Form1.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.Properties.Resources.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07 DovalFragaJoseAngel MDI.csproj.GenerateResource.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07 DovalFragaJoseAngel MDI.csproj.CoreCompileInputs.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07 DovalFragaJoseAngel MDI.exe
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07 DovalFragaJoseAngel MDI.pdb
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.BuscarPalabra_Form.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.OrganizaVideos_Form.resources
