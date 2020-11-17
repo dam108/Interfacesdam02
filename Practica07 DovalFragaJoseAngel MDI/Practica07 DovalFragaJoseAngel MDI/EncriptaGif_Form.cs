@@ -16,5 +16,6 @@ namespace Practica07_DovalFragaJoseAngel_MDI
         {
             InitializeComponent();
         }
+
     }
 }

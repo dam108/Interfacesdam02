@@ -10,3 +10,4 @@ E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAng
 E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07 DovalFragaJoseAngel MDI.pdb
 E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.BuscarPalabra_Form.resources
 E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.OrganizaVideos_Form.resources
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.EncriptaGif_Form.resources

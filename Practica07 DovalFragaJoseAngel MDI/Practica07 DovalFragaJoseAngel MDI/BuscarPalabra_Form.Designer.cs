@@ -114,7 +114,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             this.borrarLineaToolStripMenuItem,
             this.copiarLineaAOtroArchivoToolStripMenuItem});
             this.menuContextualListBox.Name = "menuContextualListBox";
-            this.menuContextualListBox.Size = new System.Drawing.Size(212, 70);
+            this.menuContextualListBox.Size = new System.Drawing.Size(212, 48);
             // 
             // borrarLineaToolStripMenuItem
             // 
@@ -143,7 +143,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BuscarPalabra_Form";
-            this.Text = "BuscarPalabra_Form";
+            this.Text = "Buscador de Palabras";
             this.menuContextualRichTextBox.ResumeLayout(false);
             this.menuContextualListBox.ResumeLayout(false);
             this.ResumeLayout(false);

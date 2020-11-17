@@ -45,9 +45,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
                 {
                     advertencia("no se puede dejar vacio la seleccion de la imagen");
                 }
-
             }
-
         }
 
         private void buscar_Btn_Click(object sender, EventArgs e)
@@ -137,7 +135,6 @@ namespace Practica07_DovalFragaJoseAngel_MDI
                 }
             }
             return devolverValor;
-
         }
 
         // Reseteamos valores cuando se introduce otra palabra a buscar
@@ -210,15 +207,14 @@ namespace Practica07_DovalFragaJoseAngel_MDI
         private void copiarLineaAOtroArchivoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int n = Int16.Parse(mostrarLineas_ListBox.SelectedItem.ToString().Substring(7));
-
             int linea = n - 1;
 
             try
             {
-
                 // abrimos el archivo del que queremos leer
                 string[] datos = File.ReadAllLines(rutaArchivoOriginal);
 
+                // sacamos el nombre del archivo de su ruta 
                 string nombreArchivo = sacarNombre(rutaArchivoOriginal);
 
                 // guardamos la linea en el archivo y si no existe lo creamos
