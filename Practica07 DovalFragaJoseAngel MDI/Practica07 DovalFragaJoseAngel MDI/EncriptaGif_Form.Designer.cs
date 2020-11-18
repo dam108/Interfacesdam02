@@ -35,7 +35,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             this.encriptarCarpeta_Btn = new System.Windows.Forms.Button();
             this.desenciptar_Btn = new System.Windows.Forms.Button();
             this.mostrar_Btn = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.barraDeProgreso = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gif_Picturebox)).BeginInit();
@@ -59,36 +59,43 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             this.gif_ListBox.Name = "gif_ListBox";
             this.gif_ListBox.Size = new System.Drawing.Size(304, 304);
             this.gif_ListBox.TabIndex = 1;
+            this.gif_ListBox.SelectedValueChanged += new System.EventHandler(this.gif_ListBox_SelectedValueChanged);
             // 
             // EncriptarGif_Btn
             // 
+            this.EncriptarGif_Btn.BackColor = System.Drawing.Color.Red;
             this.EncriptarGif_Btn.Location = new System.Drawing.Point(772, 20);
             this.EncriptarGif_Btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.EncriptarGif_Btn.Name = "EncriptarGif_Btn";
             this.EncriptarGif_Btn.Size = new System.Drawing.Size(245, 55);
             this.EncriptarGif_Btn.TabIndex = 2;
             this.EncriptarGif_Btn.Text = "Encriptar Archivo GIF";
-            this.EncriptarGif_Btn.UseVisualStyleBackColor = true;
+            this.EncriptarGif_Btn.UseVisualStyleBackColor = false;
+            this.EncriptarGif_Btn.Click += new System.EventHandler(this.EncriptarGif_Btn_Click);
             // 
             // encriptarCarpeta_Btn
             // 
+            this.encriptarCarpeta_Btn.BackColor = System.Drawing.Color.Red;
             this.encriptarCarpeta_Btn.Location = new System.Drawing.Point(772, 85);
             this.encriptarCarpeta_Btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.encriptarCarpeta_Btn.Name = "encriptarCarpeta_Btn";
             this.encriptarCarpeta_Btn.Size = new System.Drawing.Size(245, 55);
             this.encriptarCarpeta_Btn.TabIndex = 2;
             this.encriptarCarpeta_Btn.Text = "Encriptar Carpeta con GIF";
-            this.encriptarCarpeta_Btn.UseVisualStyleBackColor = true;
+            this.encriptarCarpeta_Btn.UseVisualStyleBackColor = false;
+            this.encriptarCarpeta_Btn.Click += new System.EventHandler(this.encriptarCarpeta_Btn_Click);
             // 
             // desenciptar_Btn
             // 
+            this.desenciptar_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.desenciptar_Btn.Location = new System.Drawing.Point(772, 150);
             this.desenciptar_Btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.desenciptar_Btn.Name = "desenciptar_Btn";
             this.desenciptar_Btn.Size = new System.Drawing.Size(245, 57);
             this.desenciptar_Btn.TabIndex = 2;
             this.desenciptar_Btn.Text = "Desencriptar";
-            this.desenciptar_Btn.UseVisualStyleBackColor = true;
+            this.desenciptar_Btn.UseVisualStyleBackColor = false;
+            this.desenciptar_Btn.Click += new System.EventHandler(this.desenciptar_Btn_Click);
             // 
             // mostrar_Btn
             // 
@@ -99,14 +106,15 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             this.mostrar_Btn.TabIndex = 2;
             this.mostrar_Btn.Text = "Mostrar";
             this.mostrar_Btn.UseVisualStyleBackColor = true;
+            this.mostrar_Btn.Click += new System.EventHandler(this.mostrar_Btn_Click);
             // 
-            // progressBar1
+            // barraDeProgreso
             // 
-            this.progressBar1.Location = new System.Drawing.Point(457, 420);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(560, 56);
-            this.progressBar1.TabIndex = 3;
+            this.barraDeProgreso.Location = new System.Drawing.Point(457, 420);
+            this.barraDeProgreso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.barraDeProgreso.Name = "barraDeProgreso";
+            this.barraDeProgreso.Size = new System.Drawing.Size(560, 56);
+            this.barraDeProgreso.TabIndex = 3;
             // 
             // label1
             // 
@@ -136,7 +144,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             this.ClientSize = new System.Drawing.Size(1030, 490);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.barraDeProgreso);
             this.Controls.Add(this.mostrar_Btn);
             this.Controls.Add(this.desenciptar_Btn);
             this.Controls.Add(this.encriptarCarpeta_Btn);
@@ -161,7 +169,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
         private System.Windows.Forms.Button encriptarCarpeta_Btn;
         private System.Windows.Forms.Button desenciptar_Btn;
         private System.Windows.Forms.Button mostrar_Btn;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar barraDeProgreso;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

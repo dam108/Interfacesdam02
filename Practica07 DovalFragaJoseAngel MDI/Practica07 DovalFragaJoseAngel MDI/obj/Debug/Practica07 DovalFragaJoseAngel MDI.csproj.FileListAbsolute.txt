@@ -11,3 +11,16 @@ E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAng
 E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.BuscarPalabra_Form.resources
 E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.OrganizaVideos_Form.resources
 E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.EncriptaGif_Form.resources
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\bin\Debug\Practica07 DovalFragaJoseAngel MDI.exe.config
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\bin\Debug\Practica07 DovalFragaJoseAngel MDI.exe
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\bin\Debug\Practica07 DovalFragaJoseAngel MDI.pdb
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07 DovalFragaJoseAngel MDI.csprojAssemblyReference.cache
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.BuscarPalabra_Form.resources
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.EncriptaGif_Form.resources
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.Form1.resources
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.OrganizaVideos_Form.resources
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07_DovalFragaJoseAngel_MDI.Properties.Resources.resources
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07 DovalFragaJoseAngel MDI.csproj.GenerateResource.cache
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07 DovalFragaJoseAngel MDI.csproj.CoreCompileInputs.cache
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07 DovalFragaJoseAngel MDI.exe
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\Practica07 DovalFragaJoseAngel MDI\Practica07 DovalFragaJoseAngel MDI\obj\Debug\Practica07 DovalFragaJoseAngel MDI.pdb
