@@ -37,7 +37,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             this.mostrar_Btn = new System.Windows.Forms.Button();
             this.barraDeProgreso = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.finalEncriptar_Lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gif_Picturebox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,23 +126,23 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             this.label1.TabIndex = 4;
             this.label1.Text = "Progreso de la encriptación";
             // 
-            // label2
+            // finalEncriptar_Lbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(844, 390);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Encriptacion Finalizada";
-            this.label2.Visible = false;
+            this.finalEncriptar_Lbl.AutoSize = true;
+            this.finalEncriptar_Lbl.Location = new System.Drawing.Point(844, 390);
+            this.finalEncriptar_Lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.finalEncriptar_Lbl.Name = "finalEncriptar_Lbl";
+            this.finalEncriptar_Lbl.Size = new System.Drawing.Size(173, 20);
+            this.finalEncriptar_Lbl.TabIndex = 4;
+            this.finalEncriptar_Lbl.Text = "Encriptacion Finalizada";
+            this.finalEncriptar_Lbl.Visible = false;
             // 
             // EncriptaGif_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 490);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.finalEncriptar_Lbl);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.barraDeProgreso);
             this.Controls.Add(this.mostrar_Btn);
@@ -171,6 +171,6 @@ namespace Practica07_DovalFragaJoseAngel_MDI
         private System.Windows.Forms.Button mostrar_Btn;
         private System.Windows.Forms.ProgressBar barraDeProgreso;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label finalEncriptar_Lbl;
     }
 }

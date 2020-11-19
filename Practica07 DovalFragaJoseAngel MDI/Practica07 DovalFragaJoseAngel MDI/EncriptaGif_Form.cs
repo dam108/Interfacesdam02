@@ -14,7 +14,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
 {
     public partial class EncriptaGif_Form : Form
     {
-        private List<ImagenGIF> imagenes { get; set; }
+        private List<ImagenGIF> imagenes;
         BindingSource imagenesBS;
 
         public EncriptaGif_Form()
@@ -29,27 +29,29 @@ namespace Practica07_DovalFragaJoseAngel_MDI
 
         private void EncriptarGif_Btn_Click(object sender, EventArgs e)
         {
+            finalEncriptar_Lbl.Visible = false;
             OpenFileDialog elegirArchivo = new OpenFileDialog();
 
             elegirArchivo.DefaultExt = ".gif";
             elegirArchivo.Filter = "GIF Files (*.gif)|*.gif";
+            elegirArchivo.ShowDialog();
+            string ruta = elegirArchivo.FileName;
 
-            if(elegirArchivo != null)
+            if (ruta != "")
             {
                 try
                 {
-                    elegirArchivo.ShowDialog();
-                    string ruta = elegirArchivo.FileName;
-
                     if (!existeImagen(ruta))
                     {
                         string nombre = Path.GetFileName(ruta);
 
                         if (!comprobarSiEstaEncriptado(ruta))
                         {
+
                             barraDeProgreso.Value = 0;
                             imagenes.Add(new ImagenGIF(nombre, ruta, "( encriptado)"));
                             barraDeProgreso.Value = 100;
+                            finalEncriptar_Lbl.Visible = true;
                         }
                         else
                         {
@@ -57,12 +59,13 @@ namespace Practica07_DovalFragaJoseAngel_MDI
                             encriptarDesencriptaImagen(ruta);
                             imagenes.Add(new ImagenGIF(nombre, ruta, "( encriptado)"));
                             barraDeProgreso.Value = 100;
+                            finalEncriptar_Lbl.Visible = true;
                         }
                         //se actualizan vinculos
                         actualizarVinculos();
                         gif_ListBox.ClearSelected();
                     }
-                   else
+                    else
                     {
                         advertencia("Esta imagen ya esta en la lista");
                     }
@@ -113,6 +116,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
 
         private void desenciptar_Btn_Click(object sender, EventArgs e)
         {
+            finalEncriptar_Lbl.Visible = false;
             if(gif_ListBox.SelectedIndex >= 0)
             {
                 if (!comprobarSiEstaEncriptado(imagenes[gif_ListBox.SelectedIndex].Path))
@@ -123,6 +127,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
                     actualizarVinculos();
                     gif_Picturebox.Image = new Bitmap(new MemoryStream(File.ReadAllBytes(imagenes[gif_ListBox.SelectedIndex].Path)));
                     barraDeProgreso.Value = 100;
+                    finalEncriptar_Lbl.Visible = true;
                 }
                 else
                 {
@@ -137,7 +142,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
 
         private void gif_ListBox_SelectedValueChanged(object sender, EventArgs e)
         {
-            if(gif_ListBox.SelectedIndex >= 0)
+            if (gif_ListBox.SelectedIndex >= 0)
             {
                 Image oldPic = gif_Picturebox.Image;
 
@@ -158,6 +163,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
 
         private void encriptarCarpeta_Btn_Click(object sender, EventArgs e)
         {
+            finalEncriptar_Lbl.Visible = false;
             imagenes.Clear();
             actualizarVinculos();
 
@@ -184,6 +190,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
                         imagenes.Add(new ImagenGIF(nombre, path, "( encriptado)"));
                     }
                     barraDeProgreso.Value = 100;
+                    finalEncriptar_Lbl.Visible = true;
                 }
                 actualizarVinculos();
             }
@@ -206,6 +213,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
 
         private void mostrar_Btn_Click(object sender, EventArgs e)
         {
+            finalEncriptar_Lbl.Visible = false;
             if (gif_ListBox.SelectedIndex >= 0)
             {
                 System.Diagnostics.Process.Start(imagenes[gif_ListBox.SelectedIndex].Path);
@@ -215,5 +223,6 @@ namespace Practica07_DovalFragaJoseAngel_MDI
                 advertencia("Debes seleccionar una imagen");
             }
         }
+
     }
 }

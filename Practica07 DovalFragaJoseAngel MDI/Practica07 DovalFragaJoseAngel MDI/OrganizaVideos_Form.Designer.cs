@@ -75,6 +75,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             this.seleccionar_Btn.TabIndex = 3;
             this.seleccionar_Btn.Text = "Seleccionar Carpeta";
             this.seleccionar_Btn.UseVisualStyleBackColor = true;
+            this.seleccionar_Btn.Click += new System.EventHandler(this.seleccionar_Btn_Click);
             // 
             // label4
             // 
