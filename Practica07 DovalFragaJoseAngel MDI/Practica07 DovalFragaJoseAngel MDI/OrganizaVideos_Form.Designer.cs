@@ -92,6 +92,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             this.fecha_DataPicker.Name = "fecha_DataPicker";
             this.fecha_DataPicker.Size = new System.Drawing.Size(280, 26);
             this.fecha_DataPicker.TabIndex = 5;
+            this.fecha_DataPicker.ValueChanged += new System.EventHandler(this.fecha_DataPicker_ValueChanged);
             // 
             // organizar_Btn
             // 
@@ -101,6 +102,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             this.organizar_Btn.TabIndex = 6;
             this.organizar_Btn.Text = "Organiza";
             this.organizar_Btn.UseVisualStyleBackColor = true;
+            this.organizar_Btn.Click += new System.EventHandler(this.organizar_Btn_Click);
             // 
             // carpetas_TreeView
             // 
@@ -108,6 +110,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             this.carpetas_TreeView.Name = "carpetas_TreeView";
             this.carpetas_TreeView.Size = new System.Drawing.Size(273, 424);
             this.carpetas_TreeView.TabIndex = 7;
+            this.carpetas_TreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.carpetas_TreeView_AfterSelect);
             // 
             // videos_ListBox
             // 
