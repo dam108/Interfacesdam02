@@ -1,0 +1,15 @@
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\bin\Debug\ControlesPractica08.dll
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\bin\Debug\ControlesPractica08.pdb
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\obj\Debug\ControlesPractica08.csproj.CoreCompileInputs.cache
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\obj\Debug\ControlesPractica08.dll
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\obj\Debug\ControlesPractica08.pdb
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\obj\Debug\ControlesPractica08.UserControl1.resources
+F:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\obj\Debug\ControlesPractica08.csproj.GenerateResource.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\bin\Debug\ControlesPractica08.dll
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\bin\Debug\ControlesPractica08.pdb
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\obj\Debug\ControlesPractica08.csprojAssemblyReference.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\obj\Debug\ControlesPractica08.csproj.GenerateResource.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\obj\Debug\ControlesPractica08.csproj.CoreCompileInputs.cache
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\obj\Debug\ControlesPractica08.dll
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\obj\Debug\ControlesPractica08.pdb
+E:\Segundo Curso\Interfaces\ProyectosInterfacesDam2\ControlesPractica08\ControlesPractica08\obj\Debug\ControlesPractica08.presion_Control.resources
