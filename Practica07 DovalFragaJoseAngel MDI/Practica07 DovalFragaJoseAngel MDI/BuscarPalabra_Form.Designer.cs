@@ -114,7 +114,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             this.borrarLineaToolStripMenuItem,
             this.copiarLineaAOtroArchivoToolStripMenuItem});
             this.menuContextualListBox.Name = "menuContextualListBox";
-            this.menuContextualListBox.Size = new System.Drawing.Size(212, 48);
+            this.menuContextualListBox.Size = new System.Drawing.Size(212, 70);
             // 
             // borrarLineaToolStripMenuItem
             // 

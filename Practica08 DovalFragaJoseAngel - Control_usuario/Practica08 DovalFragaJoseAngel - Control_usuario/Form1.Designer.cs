@@ -98,6 +98,7 @@
             this.presion_Control4.Location = new System.Drawing.Point(1227, 13);
             this.presion_Control4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.presion_Control4.Name = "presion_Control4";
+            this.presion_Control4.Presion = "2.5";
             this.presion_Control4.Size = new System.Drawing.Size(399, 232);
             this.presion_Control4.TabIndex = 3;
             // 
@@ -108,6 +109,7 @@
             this.presion_Control3.Location = new System.Drawing.Point(822, 13);
             this.presion_Control3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.presion_Control3.Name = "presion_Control3";
+            this.presion_Control3.Presion = "2.5";
             this.presion_Control3.Size = new System.Drawing.Size(399, 232);
             this.presion_Control3.TabIndex = 2;
             // 
@@ -118,6 +120,7 @@
             this.presion_Control2.Location = new System.Drawing.Point(417, 13);
             this.presion_Control2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.presion_Control2.Name = "presion_Control2";
+            this.presion_Control2.Presion = "2.5";
             this.presion_Control2.Size = new System.Drawing.Size(399, 232);
             this.presion_Control2.TabIndex = 1;
             // 
@@ -128,6 +131,7 @@
             this.presion_Control1.Location = new System.Drawing.Point(12, 13);
             this.presion_Control1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.presion_Control1.Name = "presion_Control1";
+            this.presion_Control1.Presion = "2.5";
             this.presion_Control1.Size = new System.Drawing.Size(399, 232);
             this.presion_Control1.TabIndex = 0;
             // 

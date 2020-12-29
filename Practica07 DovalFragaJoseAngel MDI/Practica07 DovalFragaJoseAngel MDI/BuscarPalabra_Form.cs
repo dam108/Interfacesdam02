@@ -233,5 +233,10 @@ namespace Practica07_DovalFragaJoseAngel_MDI
         {
              return Path.GetFileName(path);
         }
+
+        private void copiarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

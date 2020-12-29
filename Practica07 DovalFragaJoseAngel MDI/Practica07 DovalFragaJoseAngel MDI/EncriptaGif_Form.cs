@@ -82,7 +82,7 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             foreach (var item in imagenes)
             {
                 if (item.Path == ruta) return true;
-                return false;
+                //return false;
             }
             return false;
         }

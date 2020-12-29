@@ -67,33 +67,33 @@ namespace Practica07_DovalFragaJoseAngel_MDI
             // buscaPalabrasToolStripMenuItem
             // 
             this.buscaPalabrasToolStripMenuItem.Name = "buscaPalabrasToolStripMenuItem";
-            this.buscaPalabrasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.buscaPalabrasToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.buscaPalabrasToolStripMenuItem.Text = "Busca Palabras";
             this.buscaPalabrasToolStripMenuItem.Click += new System.EventHandler(this.buscaPalabrasToolStripMenuItem_Click);
             // 
             // encriptaGIFToolStripMenuItem
             // 
             this.encriptaGIFToolStripMenuItem.Name = "encriptaGIFToolStripMenuItem";
-            this.encriptaGIFToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.encriptaGIFToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.encriptaGIFToolStripMenuItem.Text = "Encripta GIF";
             this.encriptaGIFToolStripMenuItem.Click += new System.EventHandler(this.encriptaGIFToolStripMenuItem_Click);
             // 
             // organizaVideosToolStripMenuItem
             // 
             this.organizaVideosToolStripMenuItem.Name = "organizaVideosToolStripMenuItem";
-            this.organizaVideosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.organizaVideosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.organizaVideosToolStripMenuItem.Text = "Organiza Videos";
             this.organizaVideosToolStripMenuItem.Click += new System.EventHandler(this.organizaVideosToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(156, 6);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 

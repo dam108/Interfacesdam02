@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica09 DovalFragaJoseAngel - Acceso a Datos", "Practica09 DovalFragaJoseAngel - Acceso a Datos\Practica09 DovalFragaJoseAngel - Acceso a Datos.csproj", "{8A06B5FE-4711-4680-B031-164AAFA66974}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A06B5FE-4711-4680-B031-164AAFA66974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A06B5FE-4711-4680-B031-164AAFA66974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A06B5FE-4711-4680-B031-164AAFA66974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A06B5FE-4711-4680-B031-164AAFA66974}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {512CABAC-402F-428E-AD07-B7A5E11C916C}
+	EndGlobalSection
+EndGlobal
